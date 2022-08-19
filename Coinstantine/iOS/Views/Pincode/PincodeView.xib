@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="PincodeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="542">
+                    <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="923">
+                            <rect key="frame" x="0.0" y="25" width="106.5" height="234"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="807">
+                                    <rect key="frame" x="10" y="10" width="86.5" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="1"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="795">
+                                    <rect key="frame" x="10" y="68.5" width="86.5" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="4"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="792">
+                                    <rect key="frame" x="10" y="127" width="86.5" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="7"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="681">
+                                    <rect key="frame" x="10" y="185.5" width="86.5" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="F"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="807" firstAttribute="centerX" secondItem="923" secondAttribute="centerX" id="1296"/>
+                                <constraint firstItem="807" firstAttribute="leading" secondItem="923" secondAttribute="leading" constant="10" id="1297"/>
+                                <constraint firstItem="807" firstAttribute="top" secondItem="923" secondAttribute="top" constant="10" id="1298"/>
+                                <constraint firstItem="795" firstAttribute="centerX" secondItem="923" secondAttribute="centerX" id="1349"/>
+                                <constraint firstItem="792" firstAttribute="centerX" secondItem="923" secondAttribute="centerX" id="1350"/>
+                                <constraint firstItem="681" firstAttribute="centerX" secondItem="923" secondAttribute="centerX" id="1351"/>
+                                <constraint firstItem="795" firstAttribute="leading" secondItem="807" secondAttribute="leading" id="1406"/>
+                                <constraint firstItem="792" firstAttribute="leading" secondItem="795" secondAttribute="leading" id="1407"/>
+                                <constraint firstItem="681" firstAttribute="leading" secondItem="792" secondAttribute="leading" id="1408"/>
+                                <constraint firstAttribute="bottom" secondItem="681" secondAttribute="bottom" constant="10" id="1465"/>
+                                <constraint firstItem="792" firstAttribute="height" secondItem="681" secondAttribute="height" id="1523"/>
+                                <constraint firstItem="795" firstAttribute="height" secondItem="792" secondAttribute="height" id="1524"/>
+                                <constraint firstItem="807" firstAttribute="height" secondItem="795" secondAttribute="height" id="1525"/>
+                                <constraint firstItem="795" firstAttribute="top" secondItem="807" secondAttribute="bottom" constant="20" id="1526"/>
+                                <constraint firstItem="792" firstAttribute="top" secondItem="795" secondAttribute="bottom" constant="20" id="1527"/>
+                                <constraint firstItem="681" firstAttribute="top" secondItem="792" secondAttribute="bottom" constant="20" id="1528"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="924">
+                            <rect key="frame" x="106.5" y="25" width="107" height="234"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="808">
+                                    <rect key="frame" x="10" y="10" width="87" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="2"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="796">
+                                    <rect key="frame" x="10" y="68.5" width="87" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="5"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="793">
+                                    <rect key="frame" x="10" y="127" width="87" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="8"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="752">
+                                    <rect key="frame" x="10" y="185.5" width="87" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="0"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="808" firstAttribute="leading" secondItem="924" secondAttribute="leading" constant="10" id="1592"/>
+                                <constraint firstItem="808" firstAttribute="top" secondItem="924" secondAttribute="top" constant="10" id="1593"/>
+                                <constraint firstItem="808" firstAttribute="centerX" secondItem="924" secondAttribute="centerX" id="1594"/>
+                                <constraint firstItem="796" firstAttribute="leading" secondItem="808" secondAttribute="leading" id="1595"/>
+                                <constraint firstItem="796" firstAttribute="top" secondItem="808" secondAttribute="bottom" constant="20" id="1596"/>
+                                <constraint firstItem="796" firstAttribute="centerX" secondItem="924" secondAttribute="centerX" id="1597"/>
+                                <constraint firstItem="793" firstAttribute="top" secondItem="796" secondAttribute="bottom" constant="20" id="1598"/>
+                                <constraint firstItem="793" firstAttribute="leading" secondItem="796" secondAttribute="leading" id="1599"/>
+                                <constraint firstItem="793" firstAttribute="centerX" secondItem="924" secondAttribute="centerX" id="1600"/>
+                                <constraint firstItem="752" firstAttribute="top" secondItem="793" secondAttribute="bottom" constant="20" id="1601"/>
+                                <constraint firstItem="752" firstAttribute="leading" secondItem="793" secondAttribute="leading" id="1602"/>
+                                <constraint firstItem="752" firstAttribute="centerX" secondItem="924" secondAttribute="centerX" id="1603"/>
+                                <constraint firstAttribute="bottom" secondItem="752" secondAttribute="bottom" constant="10" id="1604"/>
+                                <constraint firstItem="808" firstAttribute="height" secondItem="796" secondAttribute="height" id="1605"/>
+                                <constraint firstItem="796" firstAttribute="height" secondItem="793" secondAttribute="height" id="1606"/>
+                                <constraint firstItem="793" firstAttribute="height" secondItem="752" secondAttribute="height" id="1607"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="925">
+                            <rect key="frame" x="213.5" y="25" width="106.5" height="234"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="809">
+                                    <rect key="frame" x="10" y="10" width="86.5" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="3"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="797">
+                                    <rect key="frame" x="10" y="68.5" width="86.5" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="6"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="794">
+                                    <rect key="frame" x="10" y="127" width="86.5" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="9"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="753">
+                                    <rect key="frame" x="10" y="185.5" width="86.5" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <state key="normal" title="DEL"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="809" firstAttribute="centerX" secondItem="925" secondAttribute="centerX" id="1766"/>
+                                <constraint firstItem="809" firstAttribute="top" secondItem="925" secondAttribute="top" constant="10" id="1767"/>
+                                <constraint firstItem="809" firstAttribute="leading" secondItem="925" secondAttribute="leading" constant="10" id="1768"/>
+                                <constraint firstItem="797" firstAttribute="top" secondItem="809" secondAttribute="bottom" constant="20" id="1769"/>
+                                <constraint firstItem="797" firstAttribute="leading" secondItem="809" secondAttribute="leading" id="1770"/>
+                                <constraint firstItem="794" firstAttribute="top" secondItem="797" secondAttribute="bottom" constant="20" id="1771"/>
+                                <constraint firstItem="794" firstAttribute="leading" secondItem="797" secondAttribute="leading" id="1772"/>
+                                <constraint firstItem="753" firstAttribute="top" secondItem="794" secondAttribute="bottom" constant="20" id="1773"/>
+                                <constraint firstItem="753" firstAttribute="leading" secondItem="794" secondAttribute="leading" id="1774"/>
+                                <constraint firstAttribute="bottom" secondItem="753" secondAttribute="bottom" constant="10" id="1775"/>
+                                <constraint firstItem="809" firstAttribute="height" secondItem="797" secondAttribute="height" id="1776"/>
+                                <constraint firstItem="797" firstAttribute="height" secondItem="794" secondAttribute="height" id="1777"/>
+                                <constraint firstItem="794" firstAttribute="height" secondItem="753" secondAttribute="height" id="1778"/>
+                                <constraint firstItem="753" firstAttribute="centerX" secondItem="925" secondAttribute="centerX" id="1779"/>
+                                <constraint firstItem="794" firstAttribute="centerX" secondItem="925" secondAttribute="centerX" id="1780"/>
+                                <constraint firstItem="797" firstAttribute="centerX" secondItem="925" secondAttribute="centerX" id="1781"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="923" firstAttribute="top" secondItem="542" secondAttribute="top" constant="25" id="962"/>
+                        <constraint firstItem="923" firstAttribute="leading" secondItem="542" secondAttribute="leading" id="963"/>
+                        <constraint firstAttribute="bottom" secondItem="923" secondAttribute="bottom" constant="25" id="964"/>
+                        <constraint firstItem="924" firstAttribute="leading" secondItem="923" secondAttribute="trailing" id="1004"/>
+                        <constraint firstItem="924" firstAttribute="bottom" secondItem="923" secondAttribute="bottom" id="1005"/>
+                        <constraint firstItem="924" firstAttribute="top" secondItem="923" secondAttribute="top" id="1013"/>
+                        <constraint firstItem="925" firstAttribute="top" secondItem="924" secondAttribute="top" id="1056"/>
+                        <constraint firstItem="925" firstAttribute="leading" secondItem="924" secondAttribute="trailing" id="1057"/>
+                        <constraint firstItem="925" firstAttribute="bottom" secondItem="924" secondAttribute="bottom" id="1058"/>
+                        <constraint firstAttribute="trailing" secondItem="925" secondAttribute="trailing" id="1059"/>
+                        <constraint firstItem="924" firstAttribute="width" secondItem="925" secondAttribute="width" id="1106"/>
+                        <constraint firstItem="923" firstAttribute="width" secondItem="924" secondAttribute="width" id="1107"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7842">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33061">
+                            <rect key="frame" x="40" y="28" width="240" height="228"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8093">
+                                    <rect key="frame" x="99" y="30" width="40" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8189">
+                                            <rect key="frame" x="15" y="10.5" width="10.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="8100"/>
+                                        <constraint firstItem="8189" firstAttribute="centerX" secondItem="8093" secondAttribute="centerX" id="8190"/>
+                                        <constraint firstItem="8189" firstAttribute="centerY" secondItem="8093" secondAttribute="centerY" id="8191"/>
+                                        <constraint firstAttribute="width" secondItem="8093" secondAttribute="height" multiplier="1:1" id="22171"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a pincode jzeldkj zelkdj zldkj zldkejz lkj dzelkdj zelkdjz ldkj " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="8462" adjustsFontForContentSizeCategory="YES" minimumScaleFactor="0.5">
+                                    <rect key="frame" x="42" y="90" width="154.5" height="58"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8460">
+                                    <rect key="frame" x="26" y="178" width="188" height="50"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10278">
+                                            <rect key="frame" x="0.0" y="0.0" width="47" height="50"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9131">
+                                                    <rect key="frame" x="18" y="20" width="10" height="10"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="9131" secondAttribute="height" multiplier="1:1" id="11262"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="9131" firstAttribute="centerX" secondItem="10278" secondAttribute="centerX" id="11130"/>
+                                                <constraint firstItem="9131" firstAttribute="centerY" secondItem="10278" secondAttribute="centerY" id="11131"/>
+                                                <constraint firstItem="9131" firstAttribute="height" secondItem="10278" secondAttribute="height" multiplier="0.2" id="11263"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10285">
+                                            <rect key="frame" x="47" y="0.0" width="47" height="50"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10136">
+                                                    <rect key="frame" x="18.5" y="20" width="10" height="10"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="10136" secondAttribute="height" multiplier="1:1" id="11393"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="10136" firstAttribute="centerX" secondItem="10285" secondAttribute="centerX" id="10873"/>
+                                                <constraint firstItem="10136" firstAttribute="centerY" secondItem="10285" secondAttribute="centerY" id="10874"/>
+                                                <constraint firstItem="10136" firstAttribute="height" secondItem="10285" secondAttribute="height" multiplier="0.2" id="11392"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10396">
+                                            <rect key="frame" x="94" y="0.0" width="47" height="50"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10146">
+                                                    <rect key="frame" x="18.5" y="20" width="10" height="10"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="10146" secondAttribute="height" multiplier="1:1" id="10147"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="10146" firstAttribute="centerX" secondItem="10396" secondAttribute="centerX" id="10875"/>
+                                                <constraint firstItem="10146" firstAttribute="centerY" secondItem="10396" secondAttribute="centerY" id="10876"/>
+                                                <constraint firstItem="10146" firstAttribute="height" secondItem="10396" secondAttribute="height" multiplier="0.2" id="11648"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10398">
+                                            <rect key="frame" x="141" y="0.0" width="47" height="50"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10153">
+                                                    <rect key="frame" x="18.5" y="20" width="10" height="10"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="10153" secondAttribute="height" multiplier="1:1" id="10154"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="10153" firstAttribute="centerX" secondItem="10398" secondAttribute="centerX" id="10877"/>
+                                                <constraint firstItem="10153" firstAttribute="centerY" secondItem="10398" secondAttribute="centerY" id="10878"/>
+                                                <constraint firstItem="10153" firstAttribute="height" secondItem="10398" secondAttribute="height" multiplier="0.2" id="11905"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="8650"/>
+                                        <constraint firstItem="10278" firstAttribute="height" secondItem="8460" secondAttribute="height" id="10619"/>
+                                        <constraint firstItem="10278" firstAttribute="leading" secondItem="8460" secondAttribute="leading" id="10620"/>
+                                        <constraint firstItem="10278" firstAttribute="width" secondItem="10285" secondAttribute="width" id="10733"/>
+                                        <constraint firstItem="10285" firstAttribute="leading" secondItem="10278" secondAttribute="trailing" id="10734"/>
+                                        <constraint firstItem="10285" firstAttribute="height" secondItem="8460" secondAttribute="height" id="10735"/>
+                                        <constraint firstItem="10285" firstAttribute="width" secondItem="10396" secondAttribute="width" id="10736"/>
+                                        <constraint firstItem="10396" firstAttribute="height" secondItem="8460" secondAttribute="height" id="10737"/>
+                                        <constraint firstItem="10396" firstAttribute="leading" secondItem="10285" secondAttribute="trailing" id="10738"/>
+                                        <constraint firstItem="10396" firstAttribute="width" secondItem="10398" secondAttribute="width" id="10739"/>
+                                        <constraint firstItem="10398" firstAttribute="height" secondItem="8460" secondAttribute="height" id="10740"/>
+                                        <constraint firstItem="10398" firstAttribute="leading" secondItem="10396" secondAttribute="trailing" id="10741"/>
+                                        <constraint firstItem="10398" firstAttribute="width" secondItem="10278" secondAttribute="width" id="10742"/>
+                                        <constraint firstAttribute="trailing" secondItem="10398" secondAttribute="trailing" id="10743"/>
+                                        <constraint firstItem="10278" firstAttribute="centerY" secondItem="8460" secondAttribute="centerY" id="10879"/>
+                                        <constraint firstItem="10285" firstAttribute="centerY" secondItem="8460" secondAttribute="centerY" id="10880"/>
+                                        <constraint firstItem="10396" firstAttribute="centerY" secondItem="8460" secondAttribute="centerY" id="10881"/>
+                                        <constraint firstItem="10398" firstAttribute="centerY" secondItem="8460" secondAttribute="centerY" id="10882"/>
+                                        <constraint firstAttribute="width" constant="188" id="33654"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="8093" firstAttribute="top" secondItem="33061" secondAttribute="top" constant="30" id="33456"/>
+                                <constraint firstAttribute="centerX" secondItem="8093" secondAttribute="centerX" constant="1" id="33457"/>
+                                <constraint firstItem="8462" firstAttribute="top" secondItem="8093" secondAttribute="bottom" constant="20" id="33458" relation="greaterThanOrEqual"/>
+                                <constraint firstAttribute="centerX" secondItem="8462" secondAttribute="centerX" constant="1" id="33459"/>
+                                <constraint firstItem="8460" firstAttribute="top" secondItem="8462" secondAttribute="bottom" constant="20" id="33462" relation="greaterThanOrEqual"/>
+                                <constraint firstItem="8460" firstAttribute="centerX" secondItem="33061" secondAttribute="centerX" id="33463"/>
+                                <constraint firstAttribute="width" constant="240" id="33511"/>
+                                <constraint firstItem="8462" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="33061" secondAttribute="leading" constant="20" id="44378"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8462" secondAttribute="trailing" constant="20" id="44379"/>
+                                <constraint id="55141" firstItem="33061" firstAttribute="bottom" secondItem="8460" secondAttribute="bottom"/>
+                                <constraint id="69608" firstItem="8462" firstAttribute="centerY" secondItem="33061" secondAttribute="centerY" constant="5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="33061" firstAttribute="centerX" secondItem="7842" secondAttribute="centerX" id="33508"/>
+                        <constraint firstAttribute="centerY" secondItem="33061" secondAttribute="centerY" id="34366"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="33061" secondAttribute="bottom" constant="10" id="44668"/>
+                        <constraint firstItem="33061" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7842" secondAttribute="top" constant="20" id="44814"/>
+                        <constraint id="48183" firstItem="33061" firstAttribute="height" secondItem="7842" secondAttribute="height" constant="1" multiplier="0.8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666696" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="542" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="543"/>
+                <constraint firstItem="542" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="544"/>
+                <constraint firstItem="542" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="578"/>
+                <constraint firstItem="542" firstAttribute="height" secondItem="1" secondAttribute="height" multiplier="0.5" id="1972"/>
+                <constraint firstItem="7842" firstAttribute="top" secondItem="1" secondAttribute="top" id="7843"/>
+                <constraint firstItem="7842" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="7844"/>
+                <constraint firstAttribute="trailing" secondItem="7842" secondAttribute="trailing" id="7845"/>
+                <constraint firstItem="542" firstAttribute="top" secondItem="7842" secondAttribute="bottom" id="7846"/>
+            </constraints>
+            <connections>
+                <outlet property="ButtonsContainer" destination="542" id="name-outlet-542"/>
+                <outlet property="InformationLabel" destination="8462" id="name-outlet-8462"/>
+                <outlet property="LockLabel" destination="8189" id="name-outlet-8189"/>
+                <outlet property="Pin0" destination="752" id="name-outlet-752"/>
+                <outlet property="Pin1" destination="807" id="name-outlet-807"/>
+                <outlet property="Pin1View" destination="9131" id="name-outlet-9131"/>
+                <outlet property="Pin2" destination="808" id="name-outlet-808"/>
+                <outlet property="Pin2View" destination="10136" id="name-outlet-10136"/>
+                <outlet property="Pin3" destination="809" id="name-outlet-809"/>
+                <outlet property="Pin3View" destination="10146" id="name-outlet-10146"/>
+                <outlet property="Pin4" destination="795" id="name-outlet-795"/>
+                <outlet property="Pin4View" destination="10153" id="name-outlet-10153"/>
+                <outlet property="Pin5" destination="796" id="name-outlet-796"/>
+                <outlet property="Pin6" destination="797" id="name-outlet-797"/>
+                <outlet property="Pin7" destination="792" id="name-outlet-792"/>
+                <outlet property="Pin8" destination="793" id="name-outlet-793"/>
+                <outlet property="Pin9" destination="794" id="name-outlet-794"/>
+                <outlet property="PinContainer" destination="8460" id="name-outlet-8460"/>
+                <outlet property="PinDel" destination="753" id="name-outlet-753"/>
+                <outlet property="PinFingerPrint" destination="681" id="name-outlet-681"/>
+                <outlet property="PinPanel1" destination="923" id="name-outlet-923"/>
+                <outlet property="PinPanel2" destination="924" id="name-outlet-924"/>
+                <outlet property="PinPanel3" destination="925" id="name-outlet-925"/>
+                <outlet property="ProgessionView" destination="8093" id="name-outlet-8093"/>
+                <outlet property="TopView" destination="7842" id="name-outlet-7842"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,283 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Coinstantine.Common\Coinstantine.Common.csproj" />
+    <ProjectReference Include="..\Coinstantine.Files\Countries\Coinstantine.Data.csproj" />
+    <ProjectReference Include="..\Coinstantine.Database\Coinstantine.Database.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="MvvmCross" Version="6.1.2" />
+    <PackageReference Include="Microsoft.AppCenter" Version="1.8.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.8.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.8.0" />
+    <PackageReference Include="Xamarin.Auth" Version="1.6.0.2" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
+    <PackageReference Include="MvvmCross.Plugin.Messenger" Version="6.1.2" />
+    <PackageReference Include="Nethereum.Portable" Version="2.5.1" />
+    <PackageReference Include="PCLCrypto" Version="2.1.27-alpha" />
+    <PackageReference Include="TweetinviAPI" Version="4.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Files\LocalTranslations.json" />
+    <None Remove="Files\Countries\af\country.json" />
+    <None Remove="Files\Countries\ca\country.json" />
+<None Remove="Files\Countries\eu\country.json" />
+<None Remove="Files\Countries\he\country.json" />
+<None Remove="Files\Countries\kk\country.json" />
+<None Remove="Files\Countries\lu\country.json" />
+<None Remove="Files\Countries\nl\country.json" />
+<None Remove="Files\Countries\ro\country.json" />
+<None Remove="Files\Countries\sv\country.json" />
+<None Remove="Files\Countries\vi\country.json" />
+<None Remove="Files\Countries\ak\country.json" />
+<None Remove="Files\Countries\ce\country.json" />
+<None Remove="Files\Countries\fa\country.json" />
+<None Remove="Files\Countries\hi\country.json" />
+<None Remove="Files\Countries\kl\country.json" />
+<None Remove="Files\Countries\lv\country.json" />
+<None Remove="Files\Countries\nn\country.json" />
+<None Remove="Files\Countries\ru\country.json" />
+<None Remove="Files\Countries\sw\country.json" />
+<None Remove="Files\Countries\yi\country.json" />
+<None Remove="Files\Countries\am\country.json" />
+<None Remove="Files\Countries\cs\country.json" />
+<None Remove="Files\Countries\ff\country.json" />
+<None Remove="Files\Countries\hr\country.json" />
+<None Remove="Files\Countries\km\country.json" />
+<None Remove="Files\Countries\mg\country.json" />
+<None Remove="Files\Countries\no\country.json" />
+<None Remove="Files\Countries\rw\country.json" />
+<None Remove="Files\Countries\ta\country.json" />
+<None Remove="Files\Countries\yo\country.json" />
+<None Remove="Files\Countries\ar\country.json" />
+<None Remove="Files\Countries\cy\country.json" />
+<None Remove="Files\Countries\fi\country.json" />
+<None Remove="Files\Countries\hu\country.json" />
+<None Remove="Files\Countries\kn\country.json" />
+<None Remove="Files\Countries\mk\country.json" />
+<None Remove="Files\Countries\om\country.json" />
+<None Remove="Files\Countries\se\country.json" />
+<None Remove="Files\Countries\te\country.json" />
+<None Remove="Files\Countries\zh\country.json" />
+<None Remove="Files\Countries\as\country.json" />
+<None Remove="Files\Countries\da\country.json" />
+<None Remove="Files\Countries\fo\country.json" />
+<None Remove="Files\Countries\hy\country.json" />
+<None Remove="Files\Countries\ko\country.json" />
+<None Remove="Files\Countries\ml\country.json" />
+<None Remove="Files\Countries\or\country.json" />
+<None Remove="Files\Countries\sg\country.json" />
+<None Remove="Files\Countries\th\country.json" />
+<None Remove="Files\Countries\zu\country.json" />
+<None Remove="Files\Countries\az\country.json" />
+<None Remove="Files\Countries\de\country.json" />
+<None Remove="Files\Countries\fr\country.json" />
+<None Remove="Files\Countries\id\country.json" />
+<None Remove="Files\Countries\ks\country.json" />
+<None Remove="Files\Countries\mn\country.json" />
+<None Remove="Files\Countries\os\country.json" />
+<None Remove="Files\Countries\sh\country.json" />
+<None Remove="Files\Countries\ti\country.json" />
+<None Remove="Files\Countries\be\country.json" />
+<None Remove="Files\Countries\dz\country.json" />
+<None Remove="Files\Countries\fy\country.json" />
+<None Remove="Files\Countries\ig\country.json" />
+<None Remove="Files\Countries\kw\country.json" />
+<None Remove="Files\Countries\mr\country.json" />
+<None Remove="Files\Countries\pa\country.json" />
+<None Remove="Files\Countries\si\country.json" />
+<None Remove="Files\Countries\tl\country.json" />
+<None Remove="Files\Countries\bg\country.json" />
+<None Remove="Files\Countries\ee\country.json" />
+<None Remove="Files\Countries\ga\country.json" />
+<None Remove="Files\Countries\ii\country.json" />
+<None Remove="Files\Countries\ky\country.json" />
+<None Remove="Files\Countries\ms\country.json" />
+<None Remove="Files\Countries\pl\country.json" />
+<None Remove="Files\Countries\sk\country.json" />
+<None Remove="Files\Countries\to\country.json" />
+<None Remove="Files\Countries\bm\country.json" />
+<None Remove="Files\Countries\el\country.json" />
+<None Remove="Files\Countries\gd\country.json" />
+<None Remove="Files\Countries\is\country.json" />
+<None Remove="Files\Countries\lb\country.json" />
+<None Remove="Files\Countries\mt\country.json" />
+<None Remove="Files\Countries\ps\country.json" />
+<None Remove="Files\Countries\sl\country.json" />
+<None Remove="Files\Countries\tr\country.json" />
+<None Remove="Files\Countries\bn\country.json" />
+<None Remove="Files\Countries\en\country.json" />
+<None Remove="Files\Countries\gl\country.json" />
+<None Remove="Files\Countries\it\country.json" />
+<None Remove="Files\Countries\lg\country.json" />
+<None Remove="Files\Countries\my\country.json" />
+<None Remove="Files\Countries\pt\country.json" />
+<None Remove="Files\Countries\sn\country.json" />
+<None Remove="Files\Countries\ug\country.json" />
+<None Remove="Files\Countries\bo\country.json" />
+<None Remove="Files\Countries\eo\country.json" />
+<None Remove="Files\Countries\gu\country.json" />
+<None Remove="Files\Countries\ja\country.json" />
+<None Remove="Files\Countries\ln\country.json" />
+<None Remove="Files\Countries\nb\country.json" />
+<None Remove="Files\Countries\qu\country.json" />
+<None Remove="Files\Countries\so\country.json" />
+<None Remove="Files\Countries\uk\country.json" />
+<None Remove="Files\Countries\br\country.json" />
+<None Remove="Files\Countries\es\country.json" />
+<None Remove="Files\Countries\gv\country.json" />
+<None Remove="Files\Countries\ka\country.json" />
+<None Remove="Files\Countries\lo\country.json" />
+<None Remove="Files\Countries\nd\country.json" />
+<None Remove="Files\Countries\rm\country.json" />
+<None Remove="Files\Countries\sq\country.json" />
+<None Remove="Files\Countries\ur\country.json" />
+<None Remove="Files\Countries\bs\country.json" />
+<None Remove="Files\Countries\et\country.json" />
+<None Remove="Files\Countries\ha\country.json" />
+<None Remove="Files\Countries\ki\country.json" />
+<None Remove="Files\Countries\lt\country.json" />
+<None Remove="Files\Countries\ne\country.json" />
+<None Remove="Files\Countries\rn\country.json" />
+<None Remove="Files\Countries\sr\country.json" />
+<None Remove="Files\Countries\uz\country.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Files\LocalTranslations.json" />
+    <EmbeddedResource Include="Files\Countries\af\country.json" />
+<EmbeddedResource Include="Files\Countries\ca\country.json" />
+<EmbeddedResource Include="Files\Countries\eu\country.json" />
+<EmbeddedResource Include="Files\Countries\he\country.json" />
+<EmbeddedResource Include="Files\Countries\kk\country.json" />
+<EmbeddedResource Include="Files\Countries\lu\country.json" />
+<EmbeddedResource Include="Files\Countries\nl\country.json" />
+<EmbeddedResource Include="Files\Countries\ro\country.json" />
+<EmbeddedResource Include="Files\Countries\sv\country.json" />
+<EmbeddedResource Include="Files\Countries\vi\country.json" />
+<EmbeddedResource Include="Files\Countries\ak\country.json" />
+<EmbeddedResource Include="Files\Countries\ce\country.json" />
+<EmbeddedResource Include="Files\Countries\fa\country.json" />
+<EmbeddedResource Include="Files\Countries\hi\country.json" />
+<EmbeddedResource Include="Files\Countries\kl\country.json" />
+<EmbeddedResource Include="Files\Countries\lv\country.json" />
+<EmbeddedResource Include="Files\Countries\nn\country.json" />
+<EmbeddedResource Include="Files\Countries\ru\country.json" />
+<EmbeddedResource Include="Files\Countries\sw\country.json" />
+<EmbeddedResource Include="Files\Countries\yi\country.json" />
+<EmbeddedResource Include="Files\Countries\am\country.json" />
+<EmbeddedResource Include="Files\Countries\cs\country.json" />
+<EmbeddedResource Include="Files\Countries\ff\country.json" />
+<EmbeddedResource Include="Files\Countries\hr\country.json" />
+<EmbeddedResource Include="Files\Countries\km\country.json" />
+<EmbeddedResource Include="Files\Countries\mg\country.json" />
+<EmbeddedResource Include="Files\Countries\no\country.json" />
+<EmbeddedResource Include="Files\Countries\rw\country.json" />
+<EmbeddedResource Include="Files\Countries\ta\country.json" />
+<EmbeddedResource Include="Files\Countries\yo\country.json" />
+<EmbeddedResource Include="Files\Countries\ar\country.json" />
+<EmbeddedResource Include="Files\Countries\cy\country.json" />
+<EmbeddedResource Include="Files\Countries\fi\country.json" />
+<EmbeddedResource Include="Files\Countries\hu\country.json" />
+<EmbeddedResource Include="Files\Countries\kn\country.json" />
+<EmbeddedResource Include="Files\Countries\mk\country.json" />
+<EmbeddedResource Include="Files\Countries\om\country.json" />
+<EmbeddedResource Include="Files\Countries\se\country.json" />
+<EmbeddedResource Include="Files\Countries\te\country.json" />
+<EmbeddedResource Include="Files\Countries\zh\country.json" />
+<EmbeddedResource Include="Files\Countries\as\country.json" />
+<EmbeddedResource Include="Files\Countries\da\country.json" />
+<EmbeddedResource Include="Files\Countries\fo\country.json" />
+<EmbeddedResource Include="Files\Countries\hy\country.json" />
+<EmbeddedResource Include="Files\Countries\ko\country.json" />
+<EmbeddedResource Include="Files\Countries\ml\country.json" />
+<EmbeddedResource Include="Files\Countries\or\country.json" />
+<EmbeddedResource Include="Files\Countries\sg\country.json" />
+<EmbeddedResource Include="Files\Countries\th\country.json" />
+<EmbeddedResource Include="Files\Countries\zu\country.json" />
+<EmbeddedResource Include="Files\Countries\az\country.json" />
+<EmbeddedResource Include="Files\Countries\de\country.json" />
+<EmbeddedResource Include="Files\Countries\fr\country.json" />
+<EmbeddedResource Include="Files\Countries\id\country.json" />
+<EmbeddedResource Include="Files\Countries\ks\country.json" />
+<EmbeddedResource Include="Files\Countries\mn\country.json" />
+<EmbeddedResource Include="Files\Countries\os\country.json" />
+<EmbeddedResource Include="Files\Countries\sh\country.json" />
+<EmbeddedResource Include="Files\Countries\ti\country.json" />
+<EmbeddedResource Include="Files\Countries\be\country.json" />
+<EmbeddedResource Include="Files\Countries\dz\country.json" />
+<EmbeddedResource Include="Files\Countries\fy\country.json" />
+<EmbeddedResource Include="Files\Countries\ig\country.json" />
+<EmbeddedResource Include="Files\Countries\kw\country.json" />
+<EmbeddedResource Include="Files\Countries\mr\country.json" />
+<EmbeddedResource Include="Files\Countries\pa\country.json" />
+<EmbeddedResource Include="Files\Countries\si\country.json" />
+<EmbeddedResource Include="Files\Countries\tl\country.json" />
+<EmbeddedResource Include="Files\Countries\bg\country.json" />
+<EmbeddedResource Include="Files\Countries\ee\country.json" />
+<EmbeddedResource Include="Files\Countries\ga\country.json" />
+<EmbeddedResource Include="Files\Countries\ii\country.json" />
+<EmbeddedResource Include="Files\Countries\ky\country.json" />
+<EmbeddedResource Include="Files\Countries\ms\country.json" />
+<EmbeddedResource Include="Files\Countries\pl\country.json" />
+<EmbeddedResource Include="Files\Countries\sk\country.json" />
+<EmbeddedResource Include="Files\Countries\to\country.json" />
+<EmbeddedResource Include="Files\Countries\bm\country.json" />
+<EmbeddedResource Include="Files\Countries\el\country.json" />
+<EmbeddedResource Include="Files\Countries\gd\country.json" />
+<EmbeddedResource Include="Files\Countries\is\country.json" />
+<EmbeddedResource Include="Files\Countries\lb\country.json" />
+<EmbeddedResource Include="Files\Countries\mt\country.json" />
+<EmbeddedResource Include="Files\Countries\ps\country.json" />
+<EmbeddedResource Include="Files\Countries\sl\country.json" />
+<EmbeddedResource Include="Files\Countries\tr\country.json" />
+<EmbeddedResource Include="Files\Countries\bn\country.json" />
+<EmbeddedResource Include="Files\Countries\en\country.json" />
+<EmbeddedResource Include="Files\Countries\gl\country.json" />
+<EmbeddedResource Include="Files\Countries\it\country.json" />
+<EmbeddedResource Include="Files\Countries\lg\country.json" />
+<EmbeddedResource Include="Files\Countries\my\country.json" />
+<EmbeddedResource Include="Files\Countries\pt\country.json" />
+<EmbeddedResource Include="Files\Countries\sn\country.json" />
+<EmbeddedResource Include="Files\Countries\ug\country.json" />
+<EmbeddedResource Include="Files\Countries\bo\country.json" />
+<EmbeddedResource Include="Files\Countries\eo\country.json" />
+<EmbeddedResource Include="Files\Countries\gu\country.json" />
+<EmbeddedResource Include="Files\Countries\ja\country.json" />
+<EmbeddedResource Include="Files\Countries\ln\country.json" />
+<EmbeddedResource Include="Files\Countries\nb\country.json" />
+<EmbeddedResource Include="Files\Countries\qu\country.json" />
+<EmbeddedResource Include="Files\Countries\so\country.json" />
+<EmbeddedResource Include="Files\Countries\uk\country.json" />
+<EmbeddedResource Include="Files\Countries\br\country.json" />
+<EmbeddedResource Include="Files\Countries\es\country.json" />
+<EmbeddedResource Include="Files\Countries\gv\country.json" />
+<EmbeddedResource Include="Files\Countries\ka\country.json" />
+<EmbeddedResource Include="Files\Countries\lo\country.json" />
+<EmbeddedResource Include="Files\Countries\nd\country.json" />
+<EmbeddedResource Include="Files\Countries\rm\country.json" />
+<EmbeddedResource Include="Files\Countries\sq\country.json" />
+<EmbeddedResource Include="Files\Countries\ur\country.json" />
+<EmbeddedResource Include="Files\Countries\bs\country.json" />
+<EmbeddedResource Include="Files\Countries\et\country.json" />
+<EmbeddedResource Include="Files\Countries\ha\country.json" />
+<EmbeddedResource Include="Files\Countries\ki\country.json" />
+<EmbeddedResource Include="Files\Countries\lt\country.json" />
+<EmbeddedResource Include="Files\Countries\ne\country.json" />
+<EmbeddedResource Include="Files\Countries\rn\country.json" />
+<EmbeddedResource Include="Files\Countries\sr\country.json" />
+<EmbeddedResource Include="Files\Countries\uz\country.json" />
+
+</ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documents\" />
+    <Folder Include="Auth\Models\" />
+    <Folder Include="Files\Countries\" />
+    <Folder Include="Auth\Validation\" />
+    <Folder Include="Interfaces\Auth\Validation\" />
+  </ItemGroup>
+</Project>

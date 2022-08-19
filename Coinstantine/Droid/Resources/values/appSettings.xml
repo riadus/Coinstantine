@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="ApiEnvironment">Acceptance</string>
+  <string name="AppCenterKey">bc1ad6c9-789c-4159-936e-1be01a2fbebd</string>
+  <string name="ClientId">ba966a56-767a-416b-939c-13f2706a3f9f</string>
+  <string name="Secret">PxPy8FuZpWjbdyfYeqS2qa1llbiAjHGx</string>
+  <string name="BuildVersion">1.0.12</string>
+  <string name="NotificationConnectionString">Endpoint=sb://coinstantine.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=LiRFzXaZ0bbRwOVA4xCnFKQsNXBEC29rZiOwN3TPuh0=</string>
+  <string name="NotificationHub">CoinstantineNotificationHub</string>
+</resources>

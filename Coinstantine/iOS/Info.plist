@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApiEnvironment</key>
+	<string>Localhost</string>
+	<key>AppCenterKey</key>
+	<string>bc1ad6c9-789c-4159-936e-1be01a2fbebd</string>
+	<key>CFBundleDisplayName</key>
+	<string>Coinstantine</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.coinstantine.app</string>
+	<key>CFBundleName</key>
+	<string>Coinstantine</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.cirta.coinstantinescheme</string>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1.0.12</string>
+	<key>ClientId</key>
+	<string>ba966a56-767a-416b-939c-13f2706a3f9f</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>tg</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MinimumOSVersion</key>
+	<string>12.0</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>The app needs to use FaceID to authenticate you</string>
+	<key>NotificationConnectionString</key>
+	<string>Endpoint=sb://coinstantine.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=LiRFzXaZ0bbRwOVA4xCnFKQsNXBEC29rZiOwN3TPuh0=</string>
+	<key>NotificationHub</key>
+	<string></string>
+	<key>Secret</key>
+	<string>PxPy8FuZpWjbdyfYeqS2qa1llbiAjHGx</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/Font Awesome 5 Free-Regular-400.otf</string>
+		<string>Fonts/Font Awesome 5 Brands-Regular-400.otf</string>
+		<string>Fonts/Font Awesome 5 Free-Solid-900.otf</string>
+		<string>Fonts/icomoon.ttf</string>
+		<string>Fonts/Quicksand-Regular.otf</string>
+		<string>Fonts/Quicksand_Dash.otf</string>
+		<string>Fonts/Quicksand-Bold.otf</string>
+		<string>Fonts/Quicksand-BoldItalic.otf</string>
+		<string>Fonts/Quicksand-Italic.otf</string>
+		<string>Fonts/Quicksand-Light.otf</string>
+		<string>Fonts/Quicksand-LightItalic.otf</string>
+		<string>Fonts/Font Awesome 5 Free-Solid-900 support.otf</string>
+	</array>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
+</dict>
+</plist>

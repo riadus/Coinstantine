@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BAF9DC5-AF7A-4DCB-8253-8A0A6F285A3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Coinstantine.UnitTests</RootNamespace>
+    <AssemblyName>Coinstantine.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="FakeItEasy">
+      <HintPath>..\packages\FakeItEasy.4.9.1\lib\net45\FakeItEasy.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions">
+      <HintPath>..\packages\FluentAssertions.5.4.2\lib\net47\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TwitterAirdropRequirementTests.cs" />
+    <Compile Include="Builders\RequirementToLambdaBuilder.cs" />
+    <Compile Include="Builders\MockRepository.cs" />
+    <Compile Include="Builders\MockUnitOfWork.cs" />
+    <Compile Include="BitcoinTalkRequirementTests.cs" />
+    <Compile Include="TelegramAirdropRequirementTests.cs" />
+    <Compile Include="AirdropDefinitionsServiceTests.cs" />
+    <Compile Include="Builders\RequirementsConstructorBuilder.cs" />
+    <Compile Include="Builders\AirdropDefinitionsServiceBuilder.cs" />
+    <Compile Include="Translations\TranslationTests.cs" />
+    <Compile Include="Translations\TranslationBuilder.cs" />
+    <Compile Include="Translations\TranslationKeysRetreiver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Builders\" />
+    <Folder Include="Translations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Common\Coinstantine.Common.csproj">
+      <Project>{B1D4E3BA-ACA1-49AF-B1FB-8CFF22454E45}</Project>
+      <Name>Coinstantine.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Core\Coinstantine.Core.csproj">
+      <Project>{74E6AFD1-8BAA-48FE-AD60-72CA144EA203}</Project>
+      <Name>Coinstantine.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Data\Coinstantine.Data.csproj">
+      <Project>{BCEFE4CA-C481-48EE-BBD5-B52F9124DCE1}</Project>
+      <Name>Coinstantine.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Database\Coinstantine.Database.csproj">
+      <Project>{AFB18005-D920-41CA-BFE1-BC40FAB60617}</Project>
+      <Name>Coinstantine.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Domain\Coinstantine.Domain.csproj">
+      <Project>{4BA8E550-EC82-490F-AFF9-1E83F10CC4FF}</Project>
+      <Name>Coinstantine.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\Coinstantine API\Translations\Translations-en.csv">
+      <Link>Translations\Translations-en.csv</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\Coinstantine API\Translations\Translations-fr.csv">
+      <Link>Translations\Translations-fr.csv</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+</Project>

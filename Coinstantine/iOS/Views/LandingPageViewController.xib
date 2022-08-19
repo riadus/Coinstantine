@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingPageViewController">
+            <connections>
+                <outlet property="CoinstantineLabel" destination="130" id="name-outlet-130"/>
+                <outlet property="LoginButton" destination="134" id="name-outlet-134"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="CreateAccountButton" destination="7022" id="name-outlet-7022"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" verticalHuggingPriority="198" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coinstantine" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="130">
+                    <rect key="frame" x="64" y="340.5" width="286" height="55"/>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="47"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="134">
+                    <rect key="frame" x="64" y="498" width="286" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <constraints>
+                        <constraint id="8428" firstAttribute="height" constant="50"/>
+                    </constraints>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2582">
+                    <rect key="frame" x="0.0" y="644" width="414" height="92"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coinstantine" translatesAutoresizingMaskIntoConstraints="NO" id="3218">
+                    <rect key="frame" x="162" y="200.5" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="3310"/>
+                        <constraint firstAttribute="width" secondItem="3218" secondAttribute="height" id="3355"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7022">
+                    <rect key="frame" x="64" y="594" width="286" height="50"/>
+                    <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                    <state key="normal" title="Create account">
+                        <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <constraints>
+                        <constraint id="8188" firstAttribute="height" constant="50"/>
+                    </constraints>
+                </button>
+                <view contentMode="scaleToFill" id="7129" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="0.0" y="548" width="414" height="46"/>
+                    <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="130" firstAttribute="trailing" secondItem="134" secondAttribute="trailing" id="135"/>
+                <constraint firstItem="134" firstAttribute="leading" secondItem="130" secondAttribute="leading" id="138"/>
+                <constraint firstItem="2582" firstAttribute="bottom" secondItem="2" secondAttribute="bottom" id="2693"/>
+                <constraint firstItem="2582" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="2716"/>
+                <constraint firstItem="2582" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="2739"/>
+                <constraint firstItem="2582" firstAttribute="height" secondItem="2" secondAttribute="height" multiplier="1:8" id="2900"/>
+                <constraint firstAttribute="centerY" secondItem="130" secondAttribute="centerY" id="3160"/>
+                <constraint firstAttribute="centerX" secondItem="3218" secondAttribute="centerX" id="3241"/>
+                <constraint firstItem="130" firstAttribute="top" secondItem="3218" secondAttribute="bottom" constant="50" id="3264"/>
+                <constraint firstItem="130" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="5405"/>
+                <constraint firstItem="130" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2" secondAttribute="leading" constant="50" id="6024"/>
+                <constraint id="7041" firstItem="7022" firstAttribute="leading" secondItem="134" secondAttribute="leading"/>
+                <constraint id="7042" firstItem="7022" firstAttribute="trailing" secondItem="134" secondAttribute="trailing"/>
+                <constraint id="7043" firstItem="2582" firstAttribute="top" secondItem="7022" secondAttribute="bottom"/>
+                <constraint id="7130" firstItem="7129" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
+                <constraint id="7131" firstItem="7129" firstAttribute="trailing" secondItem="2" secondAttribute="trailing"/>
+                <constraint id="7132" firstItem="7129" firstAttribute="height" secondItem="2582" secondAttribute="height" multiplier="1:2"/>
+                <constraint id="7133" firstItem="7129" firstAttribute="top" secondItem="134" secondAttribute="bottom"/>
+                <constraint id="7158" firstItem="7022" firstAttribute="top" secondItem="7129" secondAttribute="bottom"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Coinstantine" width="90" height="90"/>
+    </resources>
+</document>

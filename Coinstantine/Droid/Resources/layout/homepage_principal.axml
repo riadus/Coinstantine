@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homepagePrincipalGuide"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/homepagePrincipalGuide"
+        android:id="@+id/hompagePrincipalHeader"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+        <mvvmcross.droid.support.v4.MvxSwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homepageSwipeToRefreshBalance"
+            >
+            <coinstantine.droid.customviews.homepage.AppScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/homepagePrincipalUsername"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:text="Riadus"/>
+                        
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/homepagePrincipalEnvironment"
+                        android:paddingRight="8dp"
+                        app:layout_constraintTop_toTopOf="@id/homepagePrincipalUsername"
+                        app:layout_constraintBottom_toBottomOf="@id/homepagePrincipalUsername"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:textSize="12sp" />
+                    
+                    <android.support.constraint.Guideline
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/homepage_principal_guide"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_end="40dp"
+                        />
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/homepagePrincipalShareButton"
+                        app:layout_constraintLeft_toRightOf="@id/homepage_principal_guide"
+                        app:layout_constraintTop_toBottomOf="@id/homepagePrincipalUsername"
+                        android:text="S"
+                        android:textColor="@android:color/white"
+                        android:background="@android:color/transparent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="0x551234567890abcdef1234567890abcdef"
+                        android:id="@+id/hompagePrincipalEthAddress"
+                        app:layout_constraintTop_toTopOf="@id/homepagePrincipalShareButton"
+                        app:layout_constraintBottom_toBottomOf="@id/homepagePrincipalShareButton"
+                        app:layout_constraintRight_toLeftOf="@id/homepage_principal_guide"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        />
+                </android.support.constraint.ConstraintLayout>
+            </coinstantine.droid.customviews.homepage.AppScrollView>
+        </mvvmcross.droid.support.v4.MvxSwipeRefreshLayout>
+        <android.support.constraint.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+        <coinstantine.droid.customviews.homepage.BalanceView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:id="@+id/homepagePrincipalBalanceCsn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/homepagePrincipalBalanceEth"
+            app:layout_constraintDimensionRatio="1"
+            />
+
+        <coinstantine.droid.customviews.homepage.BalanceView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/homepagePrincipalBalanceEth"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/homepagePrincipalBalanceCsn"
+            app:layout_constraintDimensionRatio="1"
+            />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/homepagePrincipalGuide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimary" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:paddingBottom="75dp"
+
+            app:layout_constraintBottom_toBottomOf="parent">
+            <mvvmcross.droid.support.v4.MvxSwipeRefreshLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/homepageSwipeToRefreshList">
+                <coinstantine.droid.customviews.homepage.AppListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/homepageAirdropList"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toTopOf="@+id/homepageSeparator"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="10dp"
+                    />
+            </mvvmcross.droid.support.v4.MvxSwipeRefreshLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/homepageSeparator"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.props" Condition="Exists('..\..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67A0C034-4682-4CBF-8789-D43987319DB2}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Plugin.Xablu.Walkthrough</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Plugin.Xablu.Walkthrough</AssemblyName>
+    <PackageId>Xablu.Walkthrough</PackageId>
+    <PackageVersion>1.1</PackageVersion>
+    <Authors>Riad Lakehal-Ayat</Authors>
+    <Owners>Xablu</Owners>
+    <Summary>NETStandard version of Xablu.Walkthrough</Summary>
+    <Title>Xablu.Walkthrough</Title>
+    <Description>NETStandard version of Xablu.Walkthrough</Description>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DocumentationFile>bin\iPhone\Release\Plugin.Xablu.Walkthrough.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Plugin.Xablu.Walkthrough\CrossWalkthrough.cs">
+      <Link>CrossWalkthrough.cs</Link>
+    </Compile>
+    <Compile Include="WalkthroughImplementation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extensions\IWalkthroughExtensions.cs" />
+    <Compile Include="Containers\ForestPrimesContainer.cs" />
+    <Compile Include="Containers\ForestPrimesContainerViewController.designer.cs">
+      <DependentUpon>ForestPrimesContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\IViewExtensions.cs" />
+    <Compile Include="Containers\DefaultContainer.cs" />
+    <Compile Include="Pages\ForestPrimesPage.cs" />
+    <Compile Include="Pages\ForestPrimesPage.designer.cs">
+      <DependentUpon>ForestPrimesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Containers\PantheonContainer.cs" />
+    <Compile Include="Containers\PantheonContainer.designer.cs">
+      <DependentUpon>PantheonContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DefaultPage.cs" />
+    <Compile Include="Containers\VestaContainer.cs" />
+    <Compile Include="Containers\VestaContainer.designer.cs">
+      <DependentUpon>VestaContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OvuPage.cs" />
+    <Compile Include="Pages\OvuPage.designer.cs">
+      <DependentUpon>OvuPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\VestaPage.cs" />
+    <Compile Include="Pages\VestaPage.designer.cs">
+      <DependentUpon>VestaPage.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+	<Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="DatePicker">
+      <HintPath>..\..\packages\AIDatePickerController.1.0.0\lib\Xamarin.iOS10\DatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\..\packages\Splat.5.0.2\lib\xamarinios10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="BWWalkthrough">
+      <HintPath>..\..\packages\BWWalkthrough.1.1.0\lib\Xamarin.iOS10\BWWalkthrough.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Containers\" />
+    <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Containers\ForestPrimesContainer.xib" />
+    <InterfaceDefinition Include="Pages\ForestPrimesPage.xib" />
+    <InterfaceDefinition Include="Containers\PantheonContainer.xib" />
+    <InterfaceDefinition Include="Containers\VestaContainer.xib" />
+    <InterfaceDefinition Include="Pages\OvuPage.xib" />
+    <InterfaceDefinition Include="Pages\VestaPage.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Plugin.Xablu.Walkthrough\Plugin.Xablu.Walkthrough.csproj">
+      <Project>{B01697D2-1F50-45BA-972E-51E30C07D63B}</Project>
+      <Name>Plugin.Xablu.Walkthrough</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin.Xablu.Walkthrough.Abstractions\Plugin.Xablu.Walkthrough.Abstractions.csproj">
+      <Project>{8A4F3245-8E07-4E56-8492-394C5F1BCF0C}</Project>
+      <Name>Plugin.Xablu.Walkthrough.Abstractions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets" Condition="Exists('..\..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets')" />
+</Project>

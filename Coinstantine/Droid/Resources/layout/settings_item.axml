@@ -1,0 +1,32 @@
+﻿<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <View android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/settingsItemIconContainer"
+        android:background="@android:color/white" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsItemIcon"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="@id/settingsItemIconContainer"
+        app:layout_constraintLeft_toLeftOf="@id/settingsItemIconContainer"
+        app:layout_constraintBottom_toBottomOf="@id/settingsItemIconContainer"
+        app:layout_constraintRight_toRightOf="@id/settingsItemIconContainer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/settingsItemSettingTextView"
+        app:layout_constraintTop_toTopOf="@id/settingsItemIconContainer"
+        app:layout_constraintLeft_toRightOf="@id/settingsItemIconContainer"
+        app:layout_constraintBottom_toBottomOf="@id/settingsItemIconContainer"
+        android:layout_marginLeft="10dp"/>
+</android.support.constraint.ConstraintLayout>

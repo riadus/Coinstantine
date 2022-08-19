@@ -1,0 +1,333 @@
+﻿{
+  "numberOfTranslations": 52,
+  "supportedLanguages": [
+    "en",
+    "fr"
+  ],
+  "translations": [
+    {
+      "numberOfTranslations": 26,
+      "language": "en",
+      "languageTranslations": [
+        {
+          "key": "Fixed_LandingPage_GetStarted",
+          "text": "Get Started",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_LandingPage_Login",
+          "text": "Login",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_LandingPage_Loading",
+          "text": "Loading",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Next",
+          "text": "Next",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Submit",
+          "text": "Submit",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Username",
+          "text": "Username",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Email",
+          "text": "Email",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Password",
+          "text": "Password",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Address",
+          "text": "Address",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_City",
+          "text": "City",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Country",
+          "text": "Country",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_FirstName",
+          "text": "First name",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_LastName",
+          "text": "Last name",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_DateOfBirth",
+          "text": "Date of birth",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_LoginFailed",
+          "text": "Login failed",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_AccountNotConfirmed",
+          "text": "Your account needs to be confirmed. Please follow the link received by email",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_EmailTaken",
+          "text": "Email is taken",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_UsernameTaken",
+          "text": "Username is taken",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_PasswordInvalid",
+          "text": "Password is invalid",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_DateOfBirthInvalid",
+          "text": "You must be at least 18.",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_EmailInvalid",
+          "text": "The email is invalid",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_PasswordPattern",
+          "text": "Password minimum length is 8 characters with at least 1 capital, 1 digit and 1 special character",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_AccountCreated",
+          "text": "Your account was successfuly created. You'll receive an email shortly",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_ErrorWhileCreatingAccount",
+          "text": "An error occured while creating your account",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_ForgotCredentials",
+          "text": "Forgot username/password ?",
+          "language": "en",
+          "comments": null
+        },
+        {
+          "key": "Fixed_General_Ok",
+          "text": "Ok",
+          "language": "en",
+          "comments": null
+        }
+      ]
+    },
+    {
+      "numberOfTranslations": 26,
+      "language": "fr",
+      "languageTranslations": [
+        {
+          "key": "Fixed_LandingPage_GetStarted",
+          "text": "Commencer",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_LandingPage_Login",
+          "text": "Se connecter",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_LandingPage_Loading",
+          "text": "Chargement en cours",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Next",
+          "text": "Suivant",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Submit",
+          "text": "Envoyer",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Username",
+          "text": "Nom d'utilisateur",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Email",
+          "text": "Email",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Password",
+          "text": "Mot de passe",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Address",
+          "text": "Adresse",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_City",
+          "text": "Ville",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_Country",
+          "text": "Pays",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_FirstName",
+          "text": "Prénom",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_LastName",
+          "text": "Nom",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_DateOfBirth",
+          "text": "Date de naissance",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_LoginFailed",
+          "text": "L'authentification a échoué",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_AccountNotConfirmed",
+          "text": "Votre compte doit être confirmé. Merci de cliquer sur le lien reçu par email",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_EmailTaken",
+          "text": "Cet Email est déjà pris",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_UsernameTaken",
+          "text": "Ce nom d'utilisateur est déjà pris",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_PasswordInvalid",
+          "text": "Le mot de passe n'est pas valide",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_DateOfBirthInvalid",
+          "text": "Vous devez avoir au moins 18 ans",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_EmailInvalid",
+          "text": "L'email n'est pas valide",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_PasswordPattern",
+          "text": "Le mot de passe doit comporter au minimum 8 caractères avec au moins une majuscule, un chiffre et un caractère spécial.",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_AccountCreated",
+          "text": "Vous compte a été crée. Vous allez bientôt recevoir un email.",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_ErrorWhileCreatingAccount",
+          "text": "Une erreur est survenue lors de la création du compte",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_UserAccount_ForgotCredentials",
+          "text": "Perdu votre nom d'utilisateur/mot de passe ?",
+          "language": "fr",
+          "comments": null
+        },
+        {
+          "key": "Fixed_General_Ok",
+          "text": "Ok",
+          "language": "fr",
+          "comments": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+﻿<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genericLayoutItemVerticalGuideline"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genericLayoutItemHorizontalGuideline"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genericLayoutItemTitle1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/genericLayoutItemHorizontalGuideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genericLayoutItemValue1"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/genericLayoutItemHorizontalGuideline"
+        app:layout_constraintLeft_toLeftOf="@id/genericLayoutItemTitle1"
+        android:text="Riadus"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genericLayoutItemTitle2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/genericLayoutItemHorizontalGuideline"
+        app:layout_constraintLeft_toLeftOf="@id/genericLayoutItemVerticalGuideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Posts"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genericLayoutItemValue2"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/genericLayoutItemHorizontalGuideline"
+        app:layout_constraintLeft_toLeftOf="@id/genericLayoutItemTitle2"
+        android:text="12"
+        />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genericLayoutItemVerticalGuideline2"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genericLayoutItemValue3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/genericLayoutItemVerticalGuideline2"
+        android:text="R"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{8BAD13AA-9585-433A-A3BE-DE0CAF61587C}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Coinstantine.iOS</RootNamespace>
+    <AssemblyName>Coinstantine.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Riad Lakehal-Ayat (7PKPBPMM78)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>16879</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchExtraArgs>-v -v -v -v</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Riad Lakehal-Ayat (7PKPBPMM78)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>24258</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>Coinstantine Dev</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="MvvmCross.iOS.Support.XamarinSidebar">
+      <HintPath>..\packages\MvvmCross.iOS.Support.XamarinSidebar.5.7.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.XamarinSidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.2.0\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.2.0\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth">
+      <HintPath>..\packages\Xamarin.Auth.1.6.0.2\lib\Xamarin.iOS10\Xamarin.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.Windows.Core">
+      <HintPath>..\packages\PInvoke.Windows.Core.0.5.126\lib\portable-net45+win8+wpa81\PInvoke.Windows.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.Kernel32">
+      <HintPath>..\packages\PInvoke.Kernel32.0.5.126\lib\portable-net45+win8+wpa81\PInvoke.Kernel32.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.BCrypt">
+      <HintPath>..\packages\PInvoke.BCrypt.0.5.126\lib\portable-net45+win8+wpa81\PInvoke.BCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.NCrypt">
+      <HintPath>..\packages\PInvoke.NCrypt.0.5.126\lib\portable-net45+win8+wpa81\PInvoke.NCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Validation">
+      <HintPath>..\packages\Validation.2.4.15\lib\netstandard1.3\Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLCrypto">
+      <HintPath>..\packages\PCLCrypto.2.1.27-alpha\lib\xamarinios10\PCLCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\netstandard1.0\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.2\lib\netstandard2.0\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Portable">
+      <HintPath>..\packages\Nethereum.Portable.2.5.1\lib\portable45-net45+win8+wpa81\Nethereum.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter">
+      <HintPath>..\packages\Microsoft.AppCenter.1.8.0\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.1.8.0\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.1.8.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.1.8.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics">
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.1.8.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.1.8.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLiteNetExtensions">
+      <HintPath>..\packages\SQLiteNetExtensions.2.1.0\lib\netstandard1.1\SQLiteNetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLiteNetExtensionsAsync">
+      <HintPath>..\packages\SQLiteNetExtensions.Async.2.1.0\lib\netstandard1.1\SQLiteNetExtensionsAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="BWWalkthrough">
+      <HintPath>..\packages\BWWalkthrough.1.1.0\lib\Xamarin.iOS10\BWWalkthrough.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.iOS">
+      <HintPath>..\packages\Com.Airbnb.iOS.Lottie.2.5.4\lib\xamarinios10\Lottie.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Context">
+      <HintPath>..\packages\NitoAsyncEx.Context.StrongName.1.1.0\lib\netstandard1.4\Nito.AsyncEx.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Tasks">
+      <HintPath>..\packages\NitoAsyncEx.Context.StrongName.1.1.0\lib\netstandard1.4\Nito.AsyncEx.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.Disposables">
+      <HintPath>..\packages\NitoAsyncEx.Context.StrongName.1.1.0\lib\netstandard1.4\Nito.Disposables.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.4.6.2\lib\netstandard1.1\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi.Controllers">
+      <HintPath>..\packages\TweetinviAPI.4.0.0\lib\netstandard1.4\Tweetinvi.Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi.Core">
+      <HintPath>..\packages\TweetinviAPI.4.0.0\lib\netstandard1.4\Tweetinvi.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi.Credentials">
+      <HintPath>..\packages\TweetinviAPI.4.0.0\lib\netstandard1.4\Tweetinvi.Credentials.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi">
+      <HintPath>..\packages\TweetinviAPI.4.0.0\lib\netstandard1.4\Tweetinvi.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi.Factories">
+      <HintPath>..\packages\TweetinviAPI.4.0.0\lib\netstandard1.4\Tweetinvi.Factories.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi.Logic">
+      <HintPath>..\packages\TweetinviAPI.4.0.0\lib\netstandard1.4\Tweetinvi.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi.Security">
+      <HintPath>..\packages\TweetinviAPI.4.0.0\lib\netstandard1.4\Tweetinvi.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi.Streams">
+      <HintPath>..\packages\TweetinviAPI.4.0.0\lib\netstandard1.4\Tweetinvi.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi.WebLogic">
+      <HintPath>..\packages\TweetinviAPI.4.0.0\lib\netstandard1.4\Tweetinvi.WebLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.5.0.2\lib\xamarinios10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Azure.NotificationHubs.iOS">
+      <HintPath>..\packages\Xamarin.Azure.NotificationHubs.iOS-updated.1.2.5.3\lib\Xamarin.iOS10\Xamarin.Azure.NotificationHubs.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>..\packages\Microsoft.Identity.Client.2.5.0-preview\lib\xamarinios10\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Xablu.Walkthrough.Abstractions">
+      <HintPath>..\packages\Xablu.Walkthrough.1.0.6\lib\Xamarin.iOS10\Plugin.Xablu.Walkthrough.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Xablu.Walkthrough">
+      <HintPath>..\packages\Xablu.Walkthrough.1.0.6\lib\Xamarin.iOS10\Plugin.Xablu.Walkthrough.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross">
+      <HintPath>..\packages\MvvmCross.6.1.2\lib\xamarinios10\MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugin.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.6.1.2\lib\netstandard2.0\MvvmCross.Plugin.Messenger.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\XamarinLogo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\XamarinLogo.imageset\xamarin_logo%402x.png" />
+    <ImageAsset Include="Assets.xcassets\XamarinLogo.imageset\xamarin_logo%403x.png" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TelegramTutorial4.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TelegramTutorial4.imageset\IMG_0770.png" />
+    <ImageAsset Include="Assets.xcassets\TelegramTutorial1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TelegramTutorial3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TelegramTutorial2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ArrowRight.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\XamarinLogo.imageset\ArrowRight.png" />
+    <ImageAsset Include="Assets.xcassets\ArrowRight.imageset\ArrowRight.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iTunesArtwork%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-20.png" />
+    <ImageAsset Include="Assets.xcassets\Coinstantine.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Coinstantine.imageset\Coinstantine.png" />
+    <ImageAsset Include="Assets.xcassets\Coinstantine.imageset\Coinstantine%402x.png" />
+    <ImageAsset Include="Assets.xcassets\Coinstantine.imageset\Coinstantine%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TelegramTutorial1.imageset\TelegramTutorial1.png" />
+    <ImageAsset Include="Assets.xcassets\TelegramTutorial2.imageset\TelegramTutorial2.png" />
+    <ImageAsset Include="Assets.xcassets\TelegramTutorial3.imageset\TelegramTutorial3.png" />
+    <ImageAsset Include="Assets.xcassets\TelegramTutorial4.imageset\TelegramTutorial4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="ViewControllers\LandingPageViewController.cs" />
+    <Compile Include="ViewControllers\LandingPageViewController.designer.cs">
+      <DependentUpon>LandingPageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup.cs" />
+    <Compile Include="UIServices\OverlayService.cs" />
+    <Compile Include="ViewControllers\WaitingOverlayView.cs" />
+    <Compile Include="ViewControllers\WaitingOverlayView.designer.cs">
+      <DependentUpon>WaitingOverlayView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewFactory.cs" />
+    <Compile Include="Services\DeviceInfoProvider.cs" />
+    <Compile Include="ViewControllers\BaseViewController.cs" />
+    <Compile Include="Services\TwitterServiceIOS.cs" />
+    <Compile Include="UIServices\MessageServiceIOS.cs" />
+    <Compile Include="ViewControllers\MessageView.cs" />
+    <Compile Include="ViewControllers\MessageView.designer.cs">
+      <DependentUpon>MessageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProfileValidation\TwitterViewController.cs" />
+    <Compile Include="ViewControllers\ProfileValidation\TwitterViewController.designer.cs">
+      <DependentUpon>TwitterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProfileValidation\ValidateProfileViewController.cs" />
+    <Compile Include="ViewControllers\ProfileValidation\ValidateProfileViewController.designer.cs">
+      <DependentUpon>ValidateProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProfileValidation\TelegramViewController.cs" />
+    <Compile Include="ViewControllers\ProfileValidation\TelegramViewController.designer.cs">
+      <DependentUpon>TelegramViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PathProvider.cs" />
+    <Compile Include="UIServices\OverlayManager.cs" />
+    <Compile Include="ViewControllers\Pincode\PincodeView.cs" />
+    <Compile Include="ViewControllers\Pincode\PincodeView.designer.cs">
+      <DependentUpon>PincodeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\BiometricsAuthenticator.cs" />
+    <Compile Include="Services\File.cs" />
+    <Compile Include="Converters\BoolToColorConverter.cs" />
+    <Compile Include="Views\Extensions\UIColorExtensions.cs" />
+    <Compile Include="CustomBindings\TextColorButtonBinding.cs" />
+    <Compile Include="ViewControllers\Pincode\SetPincodeViewController.cs" />
+    <Compile Include="ViewControllers\Pincode\SetPincodeViewController.designer.cs">
+      <DependentUpon>SetPincodeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Services\CrossWalkthroughInitializer.cs" />
+    <Compile Include="UIServices\AppOpener.cs" />
+    <Compile Include="Views\Menu\FloatingMenuView.cs" />
+    <Compile Include="UIServices\MenuManager.cs" />
+    <Compile Include="Views\Extensions\AnimationExtensions.cs" />
+    <Compile Include="Views\Menu\ItemIcon.cs" />
+    <Compile Include="Views\Menu\ItemView.cs" />
+    <Compile Include="Views\Menu\GestureDelegate.cs" />
+    <Compile Include="Views\Menu\CircleViews.cs" />
+    <Compile Include="Views\Menu\CircleView.cs" />
+    <Compile Include="Converters\PinConverter.cs" />
+    <Compile Include="Views\Pincode\ProgressiveView.cs" />
+    <Compile Include="Views\Pincode\ProgressiveView.designer.cs">
+      <DependentUpon>ProgressiveView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Extensions\ButtonExtensions.cs" />
+    <Compile Include="Views\Base\BackgroundBubbles.cs" />
+    <Compile Include="Views\CustomViews\AutosizeTextField.cs" />
+    <Compile Include="Views\CustomViews\AutosizeTextField.designer.cs">
+      <DependentUpon>AutosizeTextField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomViews\CircleLabel.cs" />
+    <Compile Include="Views\CustomViews\CircleLabel.designer.cs">
+      <DependentUpon>CircleLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\HomeViews\PrincipalView.cs" />
+    <Compile Include="ViewControllers\HomeViews\PrincipalView.designer.cs">
+      <DependentUpon>PrincipalView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\HomeViews\BuyView.cs" />
+    <Compile Include="ViewControllers\HomeViews\BuyView.designer.cs">
+      <DependentUpon>BuyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeViews\TokenBalanceView.cs" />
+    <Compile Include="Views\HomeViews\TokenBalanceView.designer.cs">
+      <DependentUpon>TokenBalanceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Extensions\FrameExtensions.cs" />
+    <Compile Include="ViewControllers\HomeViews\AirdropViewCell.cs" />
+    <Compile Include="ViewControllers\HomeViews\AirdropViewCell.designer.cs">
+      <DependentUpon>AirdropViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Base\BaseScrollView.cs" />
+    <Compile Include="Views\Base\BaseScrollView.designer.cs">
+      <DependentUpon>BaseScrollView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Base\BaseTableView.cs" />
+    <Compile Include="Views\Base\BaseTableView.designer.cs">
+      <DependentUpon>BaseTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\HomeViews\HomeViewController.cs" />
+    <Compile Include="ViewControllers\HomeViews\HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Extensions\Extensions.cs" />
+    <Compile Include="Views\HomeViews\ConversionTextfieldsView.cs" />
+    <Compile Include="Views\HomeViews\ConversionTextfieldsView.designer.cs">
+      <DependentUpon>ConversionTextfieldsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Settings\SettingsViewController.cs" />
+    <Compile Include="ViewControllers\Settings\SettingsViewController.designer.cs">
+      <DependentUpon>SettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Settings\SettingItemViewCell.cs" />
+    <Compile Include="ViewControllers\Settings\SettingItemViewCell.designer.cs">
+      <DependentUpon>SettingItemViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Extensions\AppStringExtension.cs" />
+    <Compile Include="Views\CustomViews\IconTextField.cs" />
+    <Compile Include="Views\CustomViews\IconTextField.designer.cs">
+      <DependentUpon>IconTextField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomViews\CircleAppStringLabel.cs" />
+    <Compile Include="Views\CustomViews\CircleAppStringLabel.designer.cs">
+      <DependentUpon>CircleAppStringLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProfileValidation\BitcoinTalkViewController.cs" />
+    <Compile Include="ViewControllers\ProfileValidation\BitcoinTalkViewController.designer.cs">
+      <DependentUpon>BitcoinTalkViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProfileValidation\DisplayInfoGenericViewController.cs" />
+    <Compile Include="ViewControllers\ProfileValidation\DisplayInfoGenericViewController.designer.cs">
+      <DependentUpon>DisplayInfoGenericViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProfileValidation\ProfileItemInfoViewCell.cs" />
+    <Compile Include="ViewControllers\ProfileValidation\ProfileItemInfoViewCell.designer.cs">
+      <DependentUpon>ProfileItemInfoViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProfileValidation\ProfileInfosView.cs" />
+    <Compile Include="ViewControllers\ProfileValidation\ProfileInfosView.designer.cs">
+      <DependentUpon>ProfileInfosView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Settings\ChangeLanguageViewController.cs" />
+    <Compile Include="ViewControllers\Settings\ChangeLanguageViewController.designer.cs">
+      <DependentUpon>ChangeLanguageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Settings\LanguageItemViewCell.cs" />
+    <Compile Include="ViewControllers\Settings\LanguageItemViewCell.designer.cs">
+      <DependentUpon>LanguageItemViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\BoolToColorWithDefaultConverter.cs" />
+    <Compile Include="Converters\BoolToFontSize.cs" />
+    <Compile Include="CustomBindings\BuyCoinstantineButtonBinding.cs" />
+    <Compile Include="CustomBindings\CircleAppStringLabelReversedBinding.cs" />
+    <Compile Include="CustomBindings\CircleAppStringLabelBinding.cs" />
+    <Compile Include="CustomBindings\AppFontCircleBinding.cs" />
+    <Compile Include="CustomBindings\AppFontButtonBinding.cs" />
+    <Compile Include="CustomBindings\AppFontLabelBinding.cs" />
+    <Compile Include="CustomBindings\FontSizeLabelBinding.cs" />
+    <Compile Include="ViewControllers\HomeViews\PresalePurchaseViewCell.cs" />
+    <Compile Include="ViewControllers\HomeViews\PresalePurchaseViewCell.designer.cs">
+      <DependentUpon>PresalePurchaseViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProfileValidation\ProfileItemInfoTitleViewCell.cs" />
+    <Compile Include="ViewControllers\ProfileValidation\ProfileItemInfoTitleViewCell.designer.cs">
+      <DependentUpon>ProfileItemInfoTitleViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AppEnvironmentProvider.cs" />
+    <Compile Include="Services\AppVersionIOS.cs" />
+    <Compile Include="CustomBindings\IconTextfieldBinding.cs" />
+    <Compile Include="ViewControllers\AccountCreation\IconTextfieldFormViewController.cs" />
+    <Compile Include="ViewControllers\AccountCreation\IconTextfieldFormViewController.designer.cs" />
+    <Compile Include="Views\CustomViews\IconTextFields.cs" />
+    <Compile Include="Views\CustomViews\IconTextFieldsContainer.cs" />
+    <Compile Include="Views\CustomViews\IconTextFieldsContainer.designer.cs" />
+    <Compile Include="Views\CustomViews\IconTextfieldViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Views\LandingPageViewController.xib" />
+    <InterfaceDefinition Include="Views\CreateAccountViewController.xib" />
+    <InterfaceDefinition Include="Views\WaitingOverlayView.xib" />
+    <InterfaceDefinition Include="Views\SetProfileViewController.xib" />
+    <InterfaceDefinition Include="Views\MenuViewController.xib" />
+    <InterfaceDefinition Include="Views\MessageView.xib" />
+    <InterfaceDefinition Include="Views\ProfileValidation\TwitterViewController.xib" />
+    <InterfaceDefinition Include="Views\ProfileValidation\ValidateProfileViewController.xib" />
+    <InterfaceDefinition Include="Views\ValidatedView.xib" />
+    <InterfaceDefinition Include="Views\Pincode\PincodeView.xib" />
+    <InterfaceDefinition Include="Views\Pincode\SetPincodeViewController.xib" />
+    <InterfaceDefinition Include="Views\ProfileValidation\TelegramViewController.xib" />
+    <InterfaceDefinition Include="Views\HomeViews\PrincipalView.xib" />
+    <InterfaceDefinition Include="Views\HomeViews\BuyView.xib" />
+    <InterfaceDefinition Include="Views\HomeViews\AirdropViewCell.xib" />
+    <InterfaceDefinition Include="Views\HomeViews\HomeViewController.xib" />
+    <InterfaceDefinition Include="Views\HomeViews\ConversionTextfieldsView.xib" />
+    <InterfaceDefinition Include="Views\Settings\SettingsViewController.xib" />
+    <InterfaceDefinition Include="Views\Settings\SettingItemViewCell.xib" />
+    <InterfaceDefinition Include="Views\ProfileValidation\BitcoinTalkViewController.xib" />
+    <InterfaceDefinition Include="Views\ProfileValidation\DisplayInfoGenericViewController.xib" />
+    <InterfaceDefinition Include="Views\ProfileValidation\ProfileItemInfoViewCell.xib" />
+    <InterfaceDefinition Include="Views\ProfileValidation\ProfileInfosView.xib" />
+    <InterfaceDefinition Include="Views\Settings\ChangeLanguageViewController.xib" />
+    <InterfaceDefinition Include="Views\Settings\LanguageItemViewCell.xib" />
+    <InterfaceDefinition Include="Views\HomeViews\PresalePurchaseViewCell.xib" />
+    <InterfaceDefinition Include="Views\ProfileValidation\ProfileItemInfoTitleViewCell.xib" />
+    <InterfaceDefinition Include="Views\AccountCreation\IconTextfieldFormViewController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="UIServices\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\ProfileValidation\" />
+    <Folder Include="ViewControllers\ProfileValidation\" />
+    <Folder Include="Views\Extensions\" />
+    <Folder Include="ViewControllers\Pincode\" />
+    <Folder Include="Views\Pincode\" />
+    <Folder Include="Converters\" />
+    <Folder Include="CustomBindings\" />
+    <Folder Include="Assets.xcassets\TelegramTutorial4.imageset\" />
+    <Folder Include="Assets.xcassets\TelegramTutorial1.imageset\" />
+    <Folder Include="Assets.xcassets\TelegramTutorial3.imageset\" />
+    <Folder Include="Assets.xcassets\TelegramTutorial5.imageset\" />
+    <Folder Include="Assets.xcassets\TelegramTutorial2.imageset\" />
+    <Folder Include="Assets.xcassets\ArrowRight.imageset\" />
+    <Folder Include="Views\Menu\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="Views\CustomViews\" />
+    <Folder Include="Views\HomeViews\" />
+    <Folder Include="ViewControllers\HomeViews\" />
+    <Folder Include="Views\Settings\" />
+    <Folder Include="ViewControllers\Settings\" />
+    <Folder Include="Resources\Animations\" />
+    <Folder Include="Assets.xcassets\Coinstantine.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Fonts\Font Awesome 5 Brands-Regular-400.otf" />
+    <BundleResource Include="Resources\Fonts\Font Awesome 5 Free-Regular-400.otf" />
+    <BundleResource Include="Resources\Fonts\Font Awesome 5 Free-Solid-900.otf" />
+    <BundleResource Include="Resources\Fonts\icomoon.ttf" />
+    <BundleResource Include="Resources\Animations\Wait_1.json" />
+    <BundleResource Include="Resources\Animations\Wait_2.json" />
+    <BundleResource Include="Resources\Fonts\Quicksand-Regular.otf" />
+    <BundleResource Include="Resources\Fonts\Quicksand_Dash.otf" />
+    <BundleResource Include="Resources\Fonts\Quicksand-Bold.otf" />
+    <BundleResource Include="Resources\Fonts\Quicksand-BoldItalic.otf" />
+    <BundleResource Include="Resources\Fonts\Quicksand-Italic.otf" />
+    <BundleResource Include="Resources\Fonts\Quicksand-Light.otf" />
+    <BundleResource Include="Resources\Fonts\Quicksand-LightItalic.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Common\Coinstantine.Common.csproj">
+      <Project>{B1D4E3BA-ACA1-49AF-B1FB-8CFF22454E45}</Project>
+      <Name>Coinstantine.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Core\Coinstantine.Core.csproj">
+      <Project>{74E6AFD1-8BAA-48FE-AD60-72CA144EA203}</Project>
+      <Name>Coinstantine.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Data\Coinstantine.Data.csproj">
+      <Project>{BCEFE4CA-C481-48EE-BBD5-B52F9124DCE1}</Project>
+      <Name>Coinstantine.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Database\Coinstantine.Database.csproj">
+      <Project>{AFB18005-D920-41CA-BFE1-BC40FAB60617}</Project>
+      <Name>Coinstantine.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetStandard\Coinstantine.Domain\Coinstantine.Domain.csproj">
+      <Project>{4BA8E550-EC82-490F-AFF9-1E83F10CC4FF}</Project>
+      <Name>Coinstantine.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+</Project>

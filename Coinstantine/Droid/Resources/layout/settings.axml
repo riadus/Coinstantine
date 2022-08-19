@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+              android:orientation="vertical" 
+              android:layout_width="match_parent" 
+              android:layout_height="match_parent"
+              android:paddingTop="150dp"
+              android:paddingBottom="80dp"
+              android:paddingStart="75dp"
+              >
+    <mvvmcross.platforms.android.binding.views.MvxListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/settingsListView"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="25dp"
+                />
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="MessageView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="663">
+                    <rect key="frame" x="30" y="309.5" width="354" height="117.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5264">
+                            <rect key="frame" x="15" y="66.5" width="324" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20" weight="semibold"/>
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.70980392156862748" blue="1" alpha="1"/>
+                            <state key="normal" title="Ok">
+                                <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="480" text="label">
+                            <rect key="frame" x="15" y="23" width="324" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="501">
+                            <rect key="frame" x="15" y="66.5" width="154.5" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20" weight="semibold"/>
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.70980392156862748" blue="1" alpha="1"/>
+                            <state key="normal" title="Ok">
+                                <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1533">
+                            <rect key="frame" x="184.5" y="66.5" width="154.5" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20" weight="semibold"/>
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0.70980392156862748" blue="1" alpha="1"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <view contentMode="scaleToFill" id="20159" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="43.5" width="354" height="23"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint id="20276" firstItem="20159" firstAttribute="height" constant="23"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" id="20427" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="23"/>
+                            <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                            <constraints>
+                                <constraint id="20428" firstItem="20427" firstAttribute="height" constant="23"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="501" firstAttribute="leading" secondItem="480" secondAttribute="leading" id="1383"/>
+                        <constraint firstAttribute="bottom" secondItem="501" secondAttribute="bottom" constant="15" id="1621"/>
+                        <constraint firstItem="1533" firstAttribute="top" secondItem="501" secondAttribute="top" id="1775"/>
+                        <constraint id="5303" firstItem="5264" firstAttribute="leading" secondItem="501" secondAttribute="leading"/>
+                        <constraint id="5323" firstItem="5264" firstAttribute="centerX" secondItem="663" secondAttribute="centerX"/>
+                        <constraint id="5344" firstItem="5264" firstAttribute="centerY" secondItem="501" secondAttribute="centerY"/>
+                        <constraint id="15159" firstItem="1533" firstAttribute="leading" secondItem="501" secondAttribute="trailing" constant="15"/>
+                        <constraint id="16355" firstItem="663" firstAttribute="trailing" secondItem="1533" secondAttribute="trailing" constant="15"/>
+                        <constraint id="16724" firstItem="1533" firstAttribute="bottom" secondItem="501" secondAttribute="bottom"/>
+                        <constraint id="16754" firstItem="1533" firstAttribute="width" secondItem="501" secondAttribute="width"/>
+                        <constraint id="18911" firstItem="663" firstAttribute="height" constant="110" relation="greaterThanOrEqual"/>
+                        <constraint id="20205" firstItem="20159" firstAttribute="top" secondItem="480" secondAttribute="bottom"/>
+                        <constraint id="20227" firstItem="480" firstAttribute="centerX" secondItem="663" secondAttribute="centerX"/>
+                        <constraint id="20250" firstItem="480" firstAttribute="leading" secondItem="663" secondAttribute="leading" constant="15"/>
+                        <constraint id="20274" firstItem="20159" firstAttribute="leading" secondItem="663" secondAttribute="leading"/>
+                        <constraint id="20275" firstItem="20159" firstAttribute="trailing" secondItem="663" secondAttribute="trailing"/>
+                        <constraint id="20278" firstItem="5264" firstAttribute="top" secondItem="20159" secondAttribute="bottom"/>
+                        <constraint id="20279" firstItem="501" firstAttribute="top" secondItem="20159" secondAttribute="bottom"/>
+                        <constraint id="20280" firstItem="1533" firstAttribute="top" secondItem="20159" secondAttribute="bottom"/>
+                        <constraint id="20429" firstItem="20427" firstAttribute="top" secondItem="663" secondAttribute="top"/>
+                        <constraint id="20463" firstItem="20427" firstAttribute="leading" secondItem="663" secondAttribute="leading"/>
+                        <constraint id="20464" firstItem="20427" firstAttribute="trailing" secondItem="663" secondAttribute="trailing"/>
+                        <constraint id="20466" firstItem="480" firstAttribute="top" secondItem="20427" secondAttribute="bottom"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+            <connections>
+                <outlet property="CancelButton" destination="1533" id="name-outlet-1533"/>
+                <outlet property="MessageLabel" destination="480" id="name-outlet-480"/>
+                <outlet property="OkButton" destination="501" id="name-outlet-501"/>
+                <outlet property="OkAloneButton" destination="5264" id="name-outlet-5264"/>
+                <outlet property="ActualView" destination="663" id="name-outlet-663"/>
+            </connections>
+            <constraints>
+                <constraint id="17591" firstItem="663" firstAttribute="centerX" secondItem="1" secondAttribute="centerX"/>
+                <constraint id="17592" firstItem="663" firstAttribute="centerY" secondItem="1" secondAttribute="centerY"/>
+                <constraint id="17904" firstItem="663" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="30"/>
+                <constraint id="18887" firstItem="663" firstAttribute="centerX" secondItem="1" secondAttribute="centerX"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

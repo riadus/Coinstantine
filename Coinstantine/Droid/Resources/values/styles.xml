@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3498DB</color>
+    <color name="colorPrimaryDark">#006AA9</color>
+    <color name="colorAccent">#00FFBE</color>
+    
+    <style name="SplashTheme" parent="SplashTheme.Base">
+		<!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+		<!-- colorPrimary is used for the default action bar background -->
+		<item name="colorPrimary">@color/primary</item>
+		<!-- colorPrimaryDark is used for the status bar -->
+		<item name="colorPrimaryDark">@color/primary</item>
+	</style>
+	<style name="SplashTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowBackground">@drawable/background_splash</item>
+	</style>
+      <!-- Base application theme. -->
+       <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+         <!-- Customize your theme here. -->
+         <item name="colorPrimary">@color/colorPrimary</item>
+         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+         <item name="colorAccent">@color/colorAccent</item>
+         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+         <!--theme for pop-up menu-->
+       </style>
+	<style name="button_primary" parent="@android:style/Widget.Button">
+		<item name="colorButtonNormal">@color/primary</item>
+		<item name="android:textColor">@android:color/white</item>
+	</style>
+	<style name="Widget.CardContent" parent="android:Widget">
+		<item name="android:paddingLeft">16dp</item>
+		<item name="android:paddingRight">16dp</item>
+		<item name="android:paddingTop">24dp</item>
+		<item name="android:paddingBottom">24dp</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+    <style name="DialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/anim_in</item>
+    <item name="android:windowExitAnimation">@anim/anim_out</item>
+</style>
+</resources>

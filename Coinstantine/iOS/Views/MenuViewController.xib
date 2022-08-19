@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
+            <connections>
+                <outlet property="ProfileButton" destination="14390" id="name-outlet-14390"/>
+                <outlet property="TwoLettersName" destination="321" id="name-outlet-321"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="WalletButton" destination="8721" id="name-outlet-8721"/>
+                <outlet property="AirdropsButton" destination="11795" id="name-outlet-11795"/>
+                <outlet property="SettingsButton" destination="15479" id="name-outlet-15479"/>
+                <outlet property="SeparatorBar" destination="4786" id="name-outlet-4786"/>
+                <outlet property="LogoutButton" destination="16344" id="name-outlet-16344"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RI" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="321" customClass="CircleLabel">
+                    <rect key="frame" x="137.5" y="30" width="139.5" height="139.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="100"/>
+                    <color key="textColor" red="0.058823529411764705" green="0.52156862745098043" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4786">
+                    <rect key="frame" x="30" y="199.5" width="354" height="2"/>
+                    <color key="backgroundColor" red="0.058823529411764705" green="0.51372549019607838" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="4977"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8721">
+                    <rect key="frame" x="30" y="230.5" width="354" height="30"/>
+                    <state key="normal" title="Wallet"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11795">
+                    <rect key="frame" x="30" y="290.5" width="354" height="30"/>
+                    <state key="normal" title="Airdrops"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14390">
+                    <rect key="frame" x="30" y="350.5" width="354" height="30"/>
+                    <state key="normal" title="Profile"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15479">
+                    <rect key="frame" x="30" y="410.5" width="354" height="30"/>
+                    <state key="normal" title="Settings"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16344">
+                    <rect key="frame" x="30" y="470.5" width="354" height="30"/>
+                    <state key="normal" title="Logout"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="321" firstAttribute="top" secondItem="2" secondAttribute="top" constant="30" id="607"/>
+                <constraint firstItem="321" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="3452"/>
+                <constraint firstAttribute="trailing" secondItem="4786" secondAttribute="trailing" constant="30" id="5073"/>
+                <constraint firstItem="4786" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="30" id="5169"/>
+                <constraint firstItem="4786" firstAttribute="top" secondItem="321" secondAttribute="bottom" constant="30" id="5265"/>
+                <constraint firstItem="8721" firstAttribute="top" secondItem="4786" secondAttribute="centerY" constant="30" id="8912"/>
+                <constraint firstItem="8721" firstAttribute="leading" secondItem="4786" secondAttribute="leading" id="9008"/>
+                <constraint firstItem="4786" firstAttribute="trailing" secondItem="8721" secondAttribute="trailing" id="9104"/>
+                <constraint firstItem="11795" firstAttribute="top" secondItem="8721" secondAttribute="bottom" constant="30" id="11986"/>
+                <constraint firstItem="11795" firstAttribute="leading" secondItem="8721" secondAttribute="leading" id="12177"/>
+                <constraint firstItem="11795" firstAttribute="trailing" secondItem="8721" secondAttribute="trailing" id="12273"/>
+                <constraint firstItem="14390" firstAttribute="top" secondItem="11795" secondAttribute="bottom" constant="30" id="14581"/>
+                <constraint firstItem="14390" firstAttribute="leading" secondItem="11795" secondAttribute="leading" id="14677"/>
+                <constraint firstItem="14390" firstAttribute="trailing" secondItem="11795" secondAttribute="trailing" id="14773"/>
+                <constraint id="15605" firstItem="15479" firstAttribute="top" secondItem="14390" secondAttribute="bottom" constant="30"/>
+                <constraint id="15731" firstItem="15479" firstAttribute="leading" secondItem="14390" secondAttribute="leading"/>
+                <constraint id="15857" firstItem="15479" firstAttribute="trailing" secondItem="14390" secondAttribute="trailing"/>
+                <constraint id="16424" firstItem="16344" firstAttribute="top" secondItem="15479" secondAttribute="bottom" constant="30"/>
+                <constraint id="16504" firstItem="16344" firstAttribute="leading" secondItem="15479" secondAttribute="leading"/>
+                <constraint id="16584" firstItem="16344" firstAttribute="trailing" secondItem="15479" secondAttribute="trailing"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

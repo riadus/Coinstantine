@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="BuyView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="102243" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="0.0" y="487" width="320" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint id="102625" firstItem="102243" firstAttribute="height" constant="60"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="594" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20" weight="black"/>
+                    <state key="normal" title="S"/>
+                    <constraints>
+                        <constraint id="1204" firstItem="594" firstAttribute="height" constant="40"/>
+                    </constraints>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1347" translatesAutoresizingMaskIntoConstraints="NO" text="CSN value">
+                    <rect key="frame" x="46" y="74" width="62.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                    <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="105496" firstItem="1347" firstAttribute="height" constant="16"/>
+                    </constraints>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETH 0.0005" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1380" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="46" y="100" width="94" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17" weight="medium"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="105497" firstItem="1380" firstAttribute="height" constant="20"/>
+                    </constraints>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1381" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="224.5" y="100" width="50.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17" weight="medium"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="105498" firstItem="1381" firstAttribute="height" constant="20"/>
+                    </constraints>
+                </label>
+                <view contentMode="scaleToFill" id="31913" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="81" y="327" width="212" height="220"/>
+                    <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15246" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="10" width="52" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETH 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15301" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="45.5" width="67.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" id="17689" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="66" width="184" height="1"/>
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.70980392156862748" blue="1" alpha="1"/>
+                            <constraints>
+                                <constraint id="18125" firstItem="17689" firstAttribute="height" constant="1"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CSN 12000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15356" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="81" width="91" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" id="18772" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="101.5" width="184" height="1"/>
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.70980392156862748" blue="1" alpha="1"/>
+                            <constraints>
+                                <constraint id="34397" firstItem="18772" firstAttribute="height" constant="1"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" id="103430" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="76" y="112" width="108" height="108"/>
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="15411" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <rect key="frame" x="5" y="5" width="98" height="98"/>
+                                    <state key="normal" title="CSN"/>
+                                    <constraints>
+                                        <constraint id="63536" firstAttribute="width" secondItem="15411" secondAttribute="height"/>
+                                    </constraints>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint id="103524" firstAttribute="width" secondItem="103430" secondAttribute="height"/>
+                                <constraint id="103628" firstItem="15411" firstAttribute="centerX" secondItem="103430" secondAttribute="centerX"/>
+                                <constraint id="103629" firstItem="15411" firstAttribute="centerY" secondItem="103430" secondAttribute="centerY"/>
+                                <constraint id="103630" firstItem="15411" firstAttribute="top" secondItem="103430" secondAttribute="top" constant="5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint id="15715" firstItem="15301" firstAttribute="top" secondItem="15246" secondAttribute="bottom" constant="15"/>
+                        <constraint id="15825" firstItem="15356" firstAttribute="top" secondItem="15301" secondAttribute="bottom" constant="15"/>
+                        <constraint id="15880" firstItem="15356" firstAttribute="leading" secondItem="15301" secondAttribute="leading"/>
+                        <constraint id="32417" firstItem="15246" firstAttribute="leading" secondItem="31913" secondAttribute="leading"/>
+                        <constraint id="32796" firstItem="31913" firstAttribute="height" constant="220"/>
+                        <constraint id="33016" firstItem="15301" firstAttribute="leading" secondItem="15246" secondAttribute="leading"/>
+                        <constraint id="33702" firstItem="17689" firstAttribute="leading" secondItem="15301" secondAttribute="leading"/>
+                        <constraint id="33811" firstItem="31913" firstAttribute="trailing" secondItem="17689" secondAttribute="trailing" constant="28"/>
+                        <constraint id="33866" firstItem="17689" firstAttribute="top" secondItem="15301" secondAttribute="bottom"/>
+                        <constraint id="34452" firstItem="17689" firstAttribute="trailing" secondItem="18772" secondAttribute="trailing"/>
+                        <constraint id="34507" firstItem="18772" firstAttribute="leading" secondItem="17689" secondAttribute="leading"/>
+                        <constraint id="34562" firstItem="18772" firstAttribute="top" secondItem="15356" secondAttribute="bottom"/>
+                        <constraint id="49586" firstItem="15246" firstAttribute="top" secondItem="31913" secondAttribute="top" constant="10"/>
+                        <constraint id="103624" firstItem="31913" firstAttribute="trailing" secondItem="103430" secondAttribute="trailing" constant="28"/>
+                        <constraint id="103625" firstItem="103430" firstAttribute="top" secondItem="18772" secondAttribute="centerY" constant="10"/>
+                        <constraint id="103626" firstItem="103430" firstAttribute="bottom" secondItem="31913" secondAttribute="bottom"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" id="38488" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="-1" y="255.5" width="320" height="10.5"/>
+                    <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                </view>
+                <view contentMode="scaleToFill" id="38597" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="0.0" y="547" width="320" height="21"/>
+                    <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                </view>
+                <view contentMode="scaleToFill" id="39249" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="0.0" y="125" width="319" height="10.5"/>
+                    <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                </view>
+                <view contentMode="scaleToFill" id="14485" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="81" y="271" width="192" height="40"/>
+                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.4392156862745098" green="1" blue="0.67450980392156867" alpha="1"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30% Bonus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="54555" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="48.5" y="10" width="95.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17" weight="heavy"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint id="35354" firstItem="14485" firstAttribute="height" constant="40"/>
+                        <constraint id="54610" firstItem="54555" firstAttribute="centerY" secondItem="14485" secondAttribute="centerY"/>
+                        <constraint id="54850" firstItem="14485" firstAttribute="trailing" secondItem="54555" secondAttribute="trailing" constant="19" relation="greaterThanOrEqual"/>
+                        <constraint id="56049" firstItem="14485" firstAttribute="centerX" secondItem="54555" secondAttribute="centerX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" id="50877" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="-1" y="316" width="320" height="11"/>
+                    <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="65582" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="46" y="41" width="10.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seems you do not have enough ETH to continue your purchase" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="70353" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="0">
+                    <rect key="frame" x="61.5" y="40" width="190" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="106019" firstItem="70353" firstAttribute="height" constant="24"/>
+                    </constraints>
+                </label>
+                <view contentMode="scaleToFill" id="86495" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="0.0" y="135.5" width="320" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint id="86662" firstItem="86495" firstAttribute="height" constant="120"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <connections>
+                <outlet property="BackToPrincipalButton" destination="594" id="name-outlet-594"/>
+                <outlet property="CsnValueLabel" destination="1347" id="name-outlet-1347"/>
+                <outlet property="CsnPriceInETH" destination="1380" id="name-outlet-1380"/>
+                <outlet property="CsnPriceInDollar" destination="1381" id="name-outlet-1381"/>
+                <outlet property="TotalLabel" destination="15246" id="name-outlet-15246"/>
+                <outlet property="TotalInETH" destination="15301" id="name-outlet-15301"/>
+                <outlet property="TotalCsn" destination="15356" id="name-outlet-15356"/>
+                <outlet property="Separator1" destination="39249" id="name-outlet-39249"/>
+                <outlet property="Separator2" destination="38488" id="name-outlet-38488"/>
+                <outlet property="Separator4" destination="38597" id="name-outlet-38597"/>
+                <outlet property="Separator3" destination="50877" id="name-outlet-50877"/>
+                <outlet property="BonusLabel" destination="54555" id="name-outlet-54555"/>
+                <outlet property="BonusContainer" destination="14485" id="name-outlet-14485"/>
+                <outlet property="InfoCharcaterLabel" destination="65582" id="name-outlet-65582"/>
+                <outlet property="InfoLabel" destination="70353" id="name-outlet-70353"/>
+                <outlet property="ConversionTextfieldsContainer" destination="86495" id="name-outlet-86495"/>
+                <outlet property="BottomBackground" destination="102243" id="name-outlet-102243"/>
+                <outlet property="BuyCSNButton" destination="15411" id="name-outlet-15411"/>
+                <outlet property="ButtonContainer" destination="103430" id="name-outlet-103430"/>
+            </connections>
+            <constraints>
+                <constraint id="1190" firstItem="594" firstAttribute="centerX" secondItem="1" secondAttribute="centerX"/>
+                <constraint id="1191" firstItem="594" firstAttribute="top" secondItem="1" secondAttribute="top"/>
+                <constraint id="1192" firstItem="594" firstAttribute="leading" secondItem="1" secondAttribute="leading"/>
+                <constraint id="1193" firstItem="1" firstAttribute="trailing" secondItem="594" secondAttribute="trailing"/>
+                <constraint id="1355" firstItem="1347" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="46"/>
+                <constraint id="1382" firstItem="1380" firstAttribute="leading" secondItem="1347" secondAttribute="leading"/>
+                <constraint id="1383" firstItem="1380" firstAttribute="top" secondItem="1347" secondAttribute="bottom" constant="10"/>
+                <constraint id="1384" firstItem="1381" firstAttribute="leading" secondItem="1380" secondAttribute="trailing" constant="30" relation="greaterThanOrEqual"/>
+                <constraint id="1385" firstItem="1381" firstAttribute="top" secondItem="1380" secondAttribute="top"/>
+                <constraint id="32961" firstItem="1" firstAttribute="trailing" secondItem="31913" secondAttribute="trailing" constant="27"/>
+                <constraint id="39627" firstItem="39249" firstAttribute="top" secondItem="1380" secondAttribute="bottom" constant="5"/>
+                <constraint id="39737" firstItem="39249" firstAttribute="leading" secondItem="1" secondAttribute="leading"/>
+                <constraint id="39792" firstItem="1" firstAttribute="trailing" secondItem="39249" secondAttribute="trailing" constant="1"/>
+                <constraint id="39956" firstItem="1" firstAttribute="leading" secondItem="38488" secondAttribute="leading" constant="1"/>
+                <constraint id="40011" firstItem="1" firstAttribute="trailing" secondItem="38488" secondAttribute="trailing" constant="1"/>
+                <constraint id="40175" firstItem="38597" firstAttribute="top" secondItem="31913" secondAttribute="bottom"/>
+                <constraint id="40449" firstItem="1" firstAttribute="bottom" secondItem="38597" secondAttribute="bottom"/>
+                <constraint id="40504" firstItem="38597" firstAttribute="trailing" secondItem="1" secondAttribute="trailing"/>
+                <constraint id="40559" firstItem="38597" firstAttribute="leading" secondItem="1" secondAttribute="leading"/>
+                <constraint id="50324" firstItem="14485" firstAttribute="top" secondItem="38488" secondAttribute="bottom" constant="5"/>
+                <constraint id="51040" firstItem="50877" firstAttribute="top" secondItem="14485" secondAttribute="bottom" constant="5"/>
+                <constraint id="51149" firstItem="1" firstAttribute="leading" secondItem="50877" secondAttribute="leading" constant="1"/>
+                <constraint id="51204" firstItem="1" firstAttribute="trailing" secondItem="50877" secondAttribute="trailing" constant="1"/>
+                <constraint id="51259" firstItem="38597" firstAttribute="trailing" secondItem="50877" secondAttribute="trailing" constant="1"/>
+                <constraint id="51368" firstItem="31913" firstAttribute="top" secondItem="50877" secondAttribute="bottom"/>
+                <constraint id="52339" firstItem="1" firstAttribute="trailing" secondItem="14485" secondAttribute="trailing" constant="47"/>
+                <constraint id="52394" firstItem="14485" firstAttribute="width" secondItem="50877" secondAttribute="width" multiplier="3:5"/>
+                <constraint id="58164" firstItem="39249" firstAttribute="height" secondItem="38488" secondAttribute="height"/>
+                <constraint id="58219" firstItem="38488" firstAttribute="height" secondItem="50877" secondAttribute="height"/>
+                <constraint id="58383" firstItem="50877" firstAttribute="height" secondItem="38597" secondAttribute="height" multiplier="1:2"/>
+                <constraint id="58547" firstItem="38597" firstAttribute="height" secondItem="39249" secondAttribute="height" multiplier="2"/>
+                <constraint id="60682" firstItem="14485" firstAttribute="leading" secondItem="31913" secondAttribute="leading"/>
+                <constraint id="66237" firstItem="65582" firstAttribute="leading" secondItem="1347" secondAttribute="leading"/>
+                <constraint id="70408" firstItem="70353" firstAttribute="leading" secondItem="65582" secondAttribute="trailing" constant="5"/>
+                <constraint id="70518" firstItem="1347" firstAttribute="top" secondItem="70353" secondAttribute="bottom" constant="10"/>
+                <constraint id="70855" firstItem="1381" firstAttribute="trailing" secondItem="70353" secondAttribute="trailing" relation="greaterThanOrEqual"/>
+                <constraint id="78518" firstItem="70353" firstAttribute="top" secondItem="594" secondAttribute="bottom"/>
+                <constraint id="78573" firstItem="70353" firstAttribute="centerY" secondItem="65582" secondAttribute="centerY" constant="1"/>
+                <constraint id="86586" firstItem="86495" firstAttribute="top" secondItem="39249" secondAttribute="bottom"/>
+                <constraint id="86605" firstItem="86495" firstAttribute="leading" secondItem="1" secondAttribute="leading"/>
+                <constraint id="86624" firstItem="86495" firstAttribute="bottom" secondItem="38488" secondAttribute="top"/>
+                <constraint id="86643" firstItem="1" firstAttribute="trailing" secondItem="86495" secondAttribute="trailing"/>
+                <constraint id="99599" firstItem="1" firstAttribute="trailing" secondItem="1381" secondAttribute="trailing" constant="45"/>
+                <constraint id="100638" firstItem="86495" firstAttribute="centerX" secondItem="1" secondAttribute="centerX"/>
+                <constraint id="102476" firstItem="102243" firstAttribute="leading" secondItem="1" secondAttribute="leading"/>
+                <constraint id="102536" firstItem="1" firstAttribute="trailing" secondItem="102243" secondAttribute="trailing"/>
+                <constraint id="106344" firstItem="102243" firstAttribute="centerX" secondItem="1" secondAttribute="centerX"/>
+                <constraint id="107074" firstItem="102243" firstAttribute="bottom" secondItem="31913" secondAttribute="bottom"/>
+                <constraint id="107176" firstItem="102243" firstAttribute="top" secondItem="31913" secondAttribute="centerY" constant="10" relation="greaterThanOrEqual"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

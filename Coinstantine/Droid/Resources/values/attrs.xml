@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <declare-styleable name="IconEditText">
+        <attr name="icon_bgcolor" format="color" />
+        <attr name="icon_color" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="hint_color" format="color" />
+        <attr name="fa_icon" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="text" format="string" />
+        <attr name="icon_typeface" format="string" />
+        <attr name="icon_size" format="dimension" />
+    </declare-styleable>
+</resources>

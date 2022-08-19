@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="112" id="cxk-wN-pdQ" customClass="SettingItemViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1539" translatesAutoresizingMaskIntoConstraints="NO">
+                        <rect key="frame" x="95" y="45.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17" weight="ultraLight"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" id="2456" translatesAutoresizingMaskIntoConstraints="NO">
+                        <rect key="frame" x="45" y="41" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2618" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="10.5" y="6" width="9.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="2523" firstItem="2456" firstAttribute="height" constant="30"/>
+                            <constraint id="2651" firstItem="2618" firstAttribute="centerY" secondItem="2456" secondAttribute="centerY"/>
+                            <constraint id="2658" firstItem="2618" firstAttribute="centerX" secondItem="2456" secondAttribute="centerX"/>
+                            <constraint id="2915" firstAttribute="width" secondItem="2456" secondAttribute="height"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3740" translatesAutoresizingMaskIntoConstraints="NO">
+                        <rect key="frame" x="146.5" y="45.5" width="10.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" id="3782" translatesAutoresizingMaskIntoConstraints="NO">
+                        <rect key="frame" x="146.5" y="41.5" width="10" height="10"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.14901960784313725" blue="0" alpha="1"/>
+                        <constraints>
+                            <constraint id="3796" firstItem="3782" firstAttribute="height" constant="10"/>
+                            <constraint id="3797" firstItem="3782" firstAttribute="width" constant="10"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint id="1553" firstItem="1539" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY"/>
+                    <constraint id="2537" firstItem="2456" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="45"/>
+                    <constraint id="2544" firstItem="YTl-1W-gDM" firstAttribute="centerY" secondItem="2456" secondAttribute="centerY"/>
+                    <constraint id="2551" firstItem="1539" firstAttribute="leading" secondItem="2456" secondAttribute="trailing" constant="20"/>
+                    <constraint id="3741" firstItem="3740" firstAttribute="leading" secondItem="1539" secondAttribute="trailing" constant="10"/>
+                    <constraint id="3742" firstItem="3740" firstAttribute="top" secondItem="1539" secondAttribute="top"/>
+                    <constraint id="3798" firstItem="3782" firstAttribute="leading" secondItem="1539" secondAttribute="trailing" constant="10"/>
+                    <constraint id="3799" firstItem="3782" firstAttribute="bottom" secondItem="1539" secondAttribute="top" constant="6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Label" destination="1539" id="name-outlet-1539"/>
+                <outlet property="IconContainer" destination="2456" id="name-outlet-2456"/>
+                <outlet property="IconLabel" destination="2618" id="name-outlet-2618"/>
+                <outlet property="NotValidatedView" destination="3782" id="name-outlet-3782"/>
+                <outlet property="ValidatedLabel" destination="3740" id="name-outlet-3740"/>
+            </connections>
+            <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+        </tableViewCell>
+    </objects>
+</document>
